@@ -38,6 +38,9 @@ nav li a:hover{
 .active {
     color: gray;
 }
+.active::after{
+    background-color: teal;
+}
 nav a::after{
     content: '';
     display: block;
