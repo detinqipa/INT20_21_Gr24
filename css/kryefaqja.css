@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+.koka{
+
+}
+.koka ul {
+    list-style-type: none;
+    padding-left: 85px;
+}
+nav li {
+    position: relative;
+    display: inline-block;
+    margin-top: 15px;
+    margin-left: 20px;
+    padding-top: 20px;
+}
+nav a {
+    display: block;
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+nav::after {
+    content: '';
+    display: block;
+    height: 5px;
+    width: 85%;
+    background-color: #fbfcfd;
+    margin-top: -5px;
+    margin-left: 105px;
+}
+nav li a:hover{
+    color: darkcyan;
+}
+.active {
+    color: gray;
+}
+nav a::after{
+    content: '';
+    display: block;
+    height: 5px;
+    margin-top: 10px;
+    width: auto;
+    background-color: #fbfcfd;
+}
+nav a:hover::after {
+    background-color: darkcyan;
+    transition: all ease-in-out 500ms;
+
+}
