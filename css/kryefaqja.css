@@ -156,6 +156,175 @@ nav a:hover::after {
     background-position: 100% 50%;
   }
 }
+/* Body */
+.clr{
+  clear:both;
+}
+.body1-main{
+  width:100%;
+  height:auto;
+  margin:auto;
+  background-color:#FFFFFF;
+  padding:50px 30px;
+  box-sizing:border-box;
+}
+.body1-inner{
+  width:1400px;
+  height:auto;
+  margin:auto;
+}
+.body1-left{
+  width:580px;
+  height:auto;
+  float:left;
+  margin-right:40px;
+  margin-left: 40px;
+}
+.body1-box{
+  width:100%;
+  height:auto;
+  margin:auto;
+}
+.body1-box p{
+  font-family: "Noto+Serif";
+  font-size:15px;
+  color:#8B8B8B;
+}
+.body1-box h1{
+  font-family: "Noto+Serif";
+  font-size: 50px;
+}
+.body1-box form {
+  margin-top:20px;
+  margin-bottom:50px;
+  margin-left:50px;
+  margin-right:10px;
+}
+.body1-box form input{
+  padding:9px;
+  font-size:inherit;
+}
+.body1-box form input[type="text"]{
+  background-color:#F1F1F1;
+  border: 2px ;
+  font-size:15px;
+  border-radius:10px;
+  font-family: "Noto+Serif";
+  color: #404040;
+  padding-right:25px;
+}
+
+.body1-box form input[type="submit"]{
+  border-radius:10px;
+  font-family: "Noto+Serif";
+  font-size:15px;
+  border-color:transparent;
+  background-color:#0098FE;
+
+  color: white;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.body1-box form input[type="submit"]:hover {
+  -webkit-transition: .5s all;
+  -moz-transition: .5s all;
+  -o-transition: .5s all;
+  -ms-transition: .5s all;
+  transition: .5s all;
+  background: #1975ff;
+}
+
+a{
+  text-decoration: none;
+  outline:none;
+}
+a img{
+  border:none;
+}
+
+.clr{
+  clear:both;
+}
+.body-main{
+  width:100%;
+  height:auto;
+  margin:auto;
+  background-color:#FFFFFF;
+  padding:50px 30px;
+  box-sizing:border-box;
+}
+.body-inner{
+  width:1400px;
+  height:auto;
+  margin:auto;
+}
+.body-left{
+  width:600px;
+  height:auto;
+  float:left;
+  margin-right:40px;
+  margin-left: 20px;
+}
+.body-left-left{
+  width:330px;
+  height:auto;
+  float:left;
+  margin-top: 30px;
+  margin-right: 40px;
+
+}
+.body-box{
+  width:100%;
+  height:auto;
+  margin:auto;
+  margin-bottom:45px;
+}
+
+.body-box p{
+  font-family:"Arial";
+  font-size:14px;
+  color:#8B8B8B;
+  text-align:center;
+  margin:10px;
+  padding: 5px;
+}
+.body-left img{
+  margin-bottom:10px;
+  margin-top:15px;
+}
+.body-left-left img{
+  margin-bottom:10px;
+  margin-top:15px;
+}
+.zoom{
+    transition: transform .3s;
+    width: 95px;
+    height: 90px;
+    margin: 0 auto;
+}
+.zoom:hover {
+    transform: scale(1.2);
+}
+.body-box a{
+  font-family: "Arial";
+  font-size:15px;
+  color:#028FEC;
+  text-decoration: none;
+}
+.body-box a:hover{
+  color:#621ea9;
+  font-size: 105%;
+}
+
+#hgroup1 {
+  border-left: 10px solid #0299FC;
+  background-color: #E0E0E0;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 20px;
+  padding: 15px;
+}
 /* Footer */
 footer{
     font-family:"open Sans";
@@ -304,3 +473,86 @@ footer{
     color:#8D8D8D;
     font-size:13px;
   }
+
+  .show_news
+{
+position: relative;
+margin-left:0;
+background:#F1F1F1;
+width: 100%;
+}
+table
+{
+border-color: #E8E8E8;
+width:100%;
+}
+.mySlides
+{
+display: none;
+}
+.slide_photos
+{
+position: relative;
+margin-right: 0;
+float:right;
+}
+.image_dimensions
+{
+height: 440px;
+width:550px;
+}
+.circles
+{
+cursor: pointer;
+height: 15px;
+width: 15px;
+margin: 0 2px;
+background-color: #0299FC;
+border-radius: 50%;
+display: inline-block;
+transition: background-color 1s ease;
+}
+.circlesStatic
+{
+cursor: pointer;
+height: 15px;
+width: 15px;
+margin: 0 2px;
+background-color: #0299FC;
+border-radius: 50%;
+display: inline-block;
+transition: background-color 1s ease;
+}
+.circles_active, .circles:hover
+{
+background-color:rgba(245, 245, 245, 0.301);
+}
+.bottom_left
+{
+position: absolute;
+bottom: 8px;
+left: 16px;
+font-size: 18px;
+}
+.prev, .next {
+cursor: pointer;
+position: absolute;
+top: 50%;
+width: auto;
+padding: 16px;
+margin-top: -22px;
+color: white;
+font-weight: bold;
+font-size: 18px;
+transition: 1s ease;
+border-radius: 0 3px 3px 0;
+user-select: none;
+}
+.next {
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover
+{
+background-color: rgba(146, 56, 56, 0.877);
+}
