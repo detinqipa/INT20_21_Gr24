@@ -131,6 +131,8 @@ nav a:hover::after {
 .fa-rss:hover {
   background: #ff6600;
 }
+/* Header i siperm perfundon ktu */
+/* Header i titullit */
 *{
   margin:0px;
   padding:0px;
@@ -156,6 +158,7 @@ nav a:hover::after {
     background-position: 100% 50%;
   }
 }
+/* Body */
 .clr{
   clear:both;
 }
@@ -472,6 +475,7 @@ a img{
   color:#8D8D8D;
   font-size:13px;
 }
+/* Footer perfundon ketu */
 .show_news
 {
 position: relative;
