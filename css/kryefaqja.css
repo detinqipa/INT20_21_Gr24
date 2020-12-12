@@ -159,6 +159,22 @@ nav a:hover::after {
   }
 }
 /* Body */
+.parent {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.image1 {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.paw{
+  position: absolute;
+  top: 25px;
+  left: 75px;
+  transform: rotate(25deg);
+}
 .clr{
   clear:both;
 }
@@ -238,7 +254,7 @@ nav a:hover::after {
 }
 
 a{
-  text-decoration: :none;
+  text-decoration: none;
   outline:none;
 }
 a img{
