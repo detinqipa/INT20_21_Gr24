@@ -5,12 +5,44 @@
     <title>Top 10</title>
     <link rel="stylesheet" href="../css/lista.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
-</head>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  
+  <script>
+     function allowDrop(ev)
+    {
+      ev.preventDefault();
+    }
+    function drag(ev)
+    {
+      ev.dataTransfer.setData("text", ev.target.id);
+    }
+    function drop(ev) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text");
+    ev.target.appendChild(document.getElementById(data));
+    }
+  </script>
+  <style>
+.latestb h4{ color:white;
+
+   }
+.latestb   h4 a:hover{
+     font-family: "open Sans";
+     font-size:17px;
+     color:#ffffff;
+
+   }
+   </style>
+  <script>
+    jQuery(document).ready(function(){
+    jQuery.goup();
+    });
+  </script>
+  </head>
 <body>
-    <header>
+    <header id="header">
         <div class="header">
-            <p style="margin-top: 15px; float: left;"><a href="signup.html" style="text-decoration: none; color: #8c8c8c;">Sign Up</a> | <a href="signin.html"style="text-decoration: none; color: #8c8c8c;"> Login</a>
+            <p style="margin-top: 15px; float: left"><a href="signup.html" style="text-decoration: none; color: #8c8c8c;">Sign Up</a> | <a href="signin.html"style="text-decoration: none; color: #8c8c8c;"> Login</a>
             <div class="icons">
               <a href="https://www.linkedin.com/" target="_blank" class="fa fa-linkedin"></a>
               <a href="https://twitter.com/" target="_blank" class="fa fa-twitter"></a>
@@ -34,8 +66,45 @@
 
         </nav>
     </div>
-    </header>
+    <div id="base_div">
+    <div id="div1">
+    </div>
+    <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+      
+</div>
+<br><br><br><br><br>
+<div class="ThisPage">
+  <div  class="lists_page">
+    <a href="listat/lista1.html" >
+  <div class="lists_page_photo1">
+    <li><h1>Top 10 most beautiful animals in the world</h1></li>
+  </div>
+  </a>
+</div>
+</div>
+
+  </br></br>
+    <ul class="pagination modal-1">
+    <li><a href="#header" class="prev" onclick="plusPage(-1)">&laquo</a></li>
+    <li><a href="#header" onclick="currentPage(1)" class="page_number active">1</a></li>
+    <li> <a href="#header" onclick="currentPage(2)" class="page_number">2</a></li>
+    <li><a href="#header" class="next" onclick="plusPage(1)">&raquo;</a></li>
+  </ul>
+  <script>
+    var pageIndex = 1;
+    showPage(pageIndex);
+  </script>
+</br></br>
+    
 </body>
+</div>
+</header>
+
 <footer>
     <div class="footer-main">
         <div class="footer-inner">
