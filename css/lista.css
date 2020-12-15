@@ -185,6 +185,9 @@ nav a:hover::after {
   background-image:url('https://www.oldest.org/wp-content/uploads/2018/02/Elephant-Shark.jpg');
   width: 90%;
 }
+.lists_page_photo4 li{
+  background-image:url(../../INT20_21_Gr24/images/tigri.jpg);
+  width: 90%;
 .lists_page_button a{
 
 text-decoration: none;
