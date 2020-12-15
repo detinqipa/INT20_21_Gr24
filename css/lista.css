@@ -175,17 +175,16 @@ nav a:hover::after {
 }
 .lists_page_photo1 li{
   background-image:url('https://i.insider.com/5be5b6c4e4218a0b3673a98f?width=800&format=jpeg&auto=webp');
-  width: 90%;
+
 }
 .lists_page_photo2 li{
   background-image:url('https://tr-images.condecdn.net/image/73pWKV7KGpP/crop/1020/f/black-mamba-10-dangerous-animals-conde-nast-traveller-30april19-getty-images.jpg');
+  
+}
+.lists_page_photo3 li{
+  background-image:url('https://www.oldest.org/wp-content/uploads/2018/02/Elephant-Shark.jpg');
   width: 90%;
 }
-
-
-
-
-
 .lists_page_button a{
 
 text-decoration: none;
