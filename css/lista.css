@@ -192,6 +192,9 @@ nav a:hover::after {
 .lists_page_photo5 li{
   background-image: url(../../INT20_21_Gr24/images/hachii.jpg);
 }
+.lists_page_photo6 li{
+  background-image: url(../../INT20_21_Gr24/images/drenushe.png);
+}
 .lists_page_button a{
 
 text-decoration: none;
