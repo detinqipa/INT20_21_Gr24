@@ -1,4 +1,4 @@
 $(window).on('scroll', function() {
-    $(".paw").css("transform", "rotate(" + $(window).scrollTop()/3 + "deg)");
+    $(".paw").css("transform", "rotate(" + $(window).scrollTop()/2 + "deg)");
   });
   
