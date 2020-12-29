@@ -37,7 +37,7 @@ function back()
   if (day_night>=0 && day_night<8)
   {
     document.write("No sleep? Even Lion king sleeps now");
-    document.getElementById("myad").style.background = " url('../images/b2.png'), url('../images/b1.png')";
+    document.getElementById("myad").style.background = " url('../images/sleepy.png'), url('../images/b1.png')";
     document.getElementById("myad").style.color = "white";
   }
   else if(day_night>=8 && day_night<12)
