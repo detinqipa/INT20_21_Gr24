@@ -31,17 +31,17 @@
         
                 <p style="margin-left: 10px;margin-right: 10px;">
                    <label > Name and Surname:</label></br>
-                   <input type="text" name="Name and Surname "size="70" placeholder="Name and Surname" />
+                   <input type="text" name="Name and Surname "size="70" placeholder="Name and Surname" required="">
                 </p>
 
                 <p style="margin-left: 10px;margin-right: 10px;">
                     <label for="Email">Email: </label></br>
-                    <input type="email" name="Email"size="70" placeholder="Email:">
+                    <input type="email" name="Email"size="70" placeholder="Email:" required="">
                 </p>
 
                 <p style="margin-left: 10px; margin-right: 10px;">
                      <label for="Password">Password:</label><br>
-                     <input type="password" name="Password"size="70" placeholder="Password">
+                     <input type="password" name="Password"size="70" placeholder="Password" required="">
                 </p>
 
             </td>
@@ -69,8 +69,8 @@
 
                    <label>Shteti</label>
 
-                   <select name="Country">
-                       
+                   <select name="Country" required="">
+                    <option>Chose</option>
                        <option>Kosovo</option>
                        <option>Albania</option>
                        <option>Italy</option>
@@ -80,8 +80,8 @@
 
                     <label>City</label>
                    
-                    <select name="City">
-                       
+                    <select name="City" required="">
+                      <option>Chose</option>
                       <option>Prishtina</option>
                       <option>London</option>
                       <option>Paris</option>
@@ -96,7 +96,7 @@
           <td>
             <p style="margin-left: 20px"> 
               <label for="Animals">The love for animals: </label>
-                <input type="range" name="animals">
+                <input type="range" name="animals" required="">
 
 
             </p>
@@ -106,7 +106,7 @@
                 
 
           
-              <label for="rules"><b>I accept the rules</b></label> <input type="checkbox"><label for="acception"><i><a href="rules.html">see the rules</a> </i></label>
+              <label for="rules"><b>I accept the rules</b></label> <input type="checkbox"><label for="acception" required=""><i><a href="rules.html"target="_blank">see the rules</a> </i></label>
                
             
             </div>

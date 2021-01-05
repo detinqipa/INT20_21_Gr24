@@ -1,4 +1,4 @@
-body {font-family: Arial, Helvetica, sans-serif; background-color: rgb(230, 231, 224);}
+body {font-family: Arial, Helvetica, sans-serif; background-image: url("../images/background2.jpg");   background-repeat: repeat;}
 form {border: 3px solid #f1f1f1;}
 
 
@@ -7,10 +7,10 @@ form {border: 3px solid #f1f1f1;}
   width: 550px; 
   height: 710px; 
   background-attachment: fixed;
-  background-color: rgb(184, 155, 155); 
+  background-color: rgb(255, 255, 255); 
   border-radius: 50px;
   margin-left: 33%;
-
+  border:solid black;
 }
 .foto img{
    width: 100px;
@@ -23,12 +23,13 @@ input[type=text], input[type=password],input[type=email] {
   padding: 12px 20px;
   margin: 0px 0;
   display: inline-block;
-  border: 1px solid #ccc;
+  border: 1px solid rgb(19, 18, 18);
   box-sizing: border-box;
+  background-color: rgb(207, 197, 185);
 }
 
 button {
-  background-color: #3aa01b;
+  background-color: #20b44c;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
