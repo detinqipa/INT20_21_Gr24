@@ -186,23 +186,28 @@ nav a:hover::after {
   width: 90%;
 }
 .lists_page_photo4 li{
-  background-image:url(../../INT20_21_Gr24/images/tigri.jpg);
-  width: 90%;
+  background-image:url(../images/tigri.jpg);
 }
 .lists_page_photo5 li{
-  background-image: url(../../INT20_21_Gr24/images/hachii.jpg);
+  background-image: url(../images/hachii.jpg);
 }
 .lists_page_photo6 li{
-  background-image: url(../../INT20_21_Gr24/images/drenushe.png);
+  background-image: url(../images/drenushe.png);
 }
 .lists_page_photo7 li{
-  background-image: url(../../INT20_21_Gr24/images/photo7.jpg);
+  background-image: url(../images/photo7.jpg);
 }
 .lists_page_photo8 li{
-  background-image: url(../../INT20_21_Gr24/images/photo8.jpg);
+  background-image: url(../images/photo8.jpg);
 }
-lists_page_photo9 li{
-  background-image: url(../../INT20_21_Gr24/images/photo9.jpg);
+.lists_page_photo9 li{
+  background-image: url(../images/photo9.jpg);
+}
+.lists_page_photo10 li{
+  background-image: url(../images/photo10.jpg);
+}
+.lists_page_photo11 li{
+  background-image: url(../images/photo11.jpg);
 }
 .lists_page_button a{
 
