@@ -9,6 +9,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="../js/jquery.goup.min.js"></script>
     <script src="../js/paw.js"></script>
+    <script src="../js/ora.js"></script>
     <style>
     .latestb h4{ color:white;
 
@@ -261,6 +262,50 @@
           <div class="clr"></div>
           </div>
           </div>
+          <div id="counter" style="text-align: center;color: green;"></div>
+          <script>
+var visits = localStorage.getItem('on_load_counter');
+var sessionVisits = sessionStorage.getItem('session_counter');
+
+if (visits === null) {
+    visits = 0;
+}
+if (sessionVisits === null) {
+  sessionVisits = 0;
+}
+
+sessionVisits++;
+visits++;
+
+localStorage.setItem("on_load_counter", visits);
+sessionStorage.setItem("session_counter", sessionVisits)
+
+document.getElementById('counter').innerHTML = "You visited our webside  " + visits + " times (" + sessionVisits + " time in this sesion).Your interest means a lot to us!";
+</script>
+
+<p style="text-align: center;color: green">You are in our webside for  <output id="result"></output> seconds</p>
+<script>
+var w;
+
+window.onload = function() {
+  if(typeof(Worker) !== "undefined") {
+    if(typeof(w) == "undefined") {
+      w = new Worker("../js/counter.js");
+    }
+    w.onmessage = function(event) {
+      document.getElementById("result").innerHTML = event.data;
+    };
+  } else {
+    document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Workers...";
+  }
+}
+
+function stopWorker() {
+  w.terminate();
+  w = undefined;
+}
+</script>
+
 
   </body>
   <footer>
