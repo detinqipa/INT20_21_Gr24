@@ -3,9 +3,6 @@
 html {
     scroll-behavior: smooth;
 }
-.koka{
-
-}
 .koka ul {
     list-style-type: none;
     padding-left: 85px;
@@ -280,3 +277,529 @@ footer{
     font-size:13px;
   }
   /* Footer perfundon ketu */
+
+  *{
+    margin:0px;
+    padding:0px;
+  }
+  .clr{
+    clear:both;
+  }
+  
+  .title {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: #080a0c;
+    text-shadow: 2px 2px #F0F0F0;
+  }
+  
+  .center-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .left-text {
+    text-align: left;
+    font-size: 22px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .left-text:hover{
+background: #e4e0dd;
+transform:translateX(10px) ;
+
+
+  }
+  .left-text strong:hover{
+    color: #2031cb;
+  }
+ 
+  .grey-background {
+    background-color: #F1F1F1;
+  }
+  
+  .article-template {
+    margin-left: 150px;
+    margin-right: 150px;
+    /* background-image: url(../images/home9.jpg); */
+    background-position: center;
+    background-size: cover;
+    padding: 30px 30px;
+    margin-bottom: 50px;
+  }
+  
+  .read-more {
+      margin-left: 150px;
+      margin-right: 150px;
+  }
+  
+  .read-more-item {
+      background-color: #F1F1F1;
+      margin-bottom: 5px;
+  }
+  
+  .read-more-item p {
+    float: right;
+    font-size: 30px;
+    color: black;
+    padding-top: 20px;
+    width: 800px;
+    word-wrap: break-word;
+  }
+
+  donation-bar-ask .donate-bar-content {
+    width: 100%;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    padding: 0 10px;
+    z-index: 100;
+    text-align: center;
+}
+
+
+.donation_part{
+width: 500px;
+
+
+position: relative;
+text-align: center;
+}
+.donation_part h1{
+
+text-align: center;
+text-transform: uppercase;
+color: rgb(255, 255, 255);
+font-size: 25px;
+
+
+}
+.donation_part h1:hover{
+
+color:black;
+
+
+}
+.donation_part a{
+border: 1px solid white;
+padding: 10px 25px;
+text-decoration: none;
+text-transform: uppercase;
+font-size: 14px;
+margin-top: 20px;
+display: inline-block;
+color: white;
+background:orange;
+}
+.donation_part a:hover{
+
+background:rgb(212, 9, 9);
+color: #333;
+
+}
+
+
+.adopt{
+width: 100%;
+height: 5px;
+background-color: rgb(93, 160, 126);
+
+ }
+
+
+
+  .row1{
+   display: flex;
+   height:88%;
+   align-items: center;
+   margin-left: 300px;
+
+   margin-top: 30px;
+ 
+   background: rgb(255, 255, 255);
+
+  }
+  .animals{
+    flex-basis: 80%;
+  }
+  .card{
+
+
+    width: 200px;
+    height: 300px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 20px 25px;
+    background-image: url(../images/home1.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .card1{
+
+
+    width: 200px;
+    height: 300px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 20px 25px;
+    background-image: url(../images/home2.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .card2{
+
+
+    width: 200px;
+    height: 300px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 20px 25px;
+    background-image: url(../images/home3.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .card3{
+
+
+    width: 200px;
+    height: 300px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 20px 25px;
+    background-image: url(../images/home4.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .card4{
+
+
+    width: 200px;
+    height: 300px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 20px 25px;
+    background-image: url(../images/home5.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .card5{
+
+
+    width: 200px;
+    height: 300px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 20px 25px;
+    background-image: url(../images/home6.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .card6{
+
+
+    width: 200px;
+    height: 300px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 20px 25px;
+    background-image: url(../images/home7.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .card7{
+
+
+    width: 200px;
+    height: 300px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 20px 25px;
+    background-image: url(../images/home8.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .card8{
+
+
+    width: 200px;
+    height: 300px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 20px 25px;
+    background-image: url(../images/home9.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .card9{
+
+
+    width: 200px;
+    height: 300px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 20px 25px;
+    background-image: url(../images/home10.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .card10{
+
+
+    width: 200px;
+    height: 300px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 20px 25px;
+    background-image: url(../images/home11.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .card11{
+
+
+    width: 200px;
+    height: 300px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 20px 25px;
+    background-image: url(../images/home12.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .card12{
+
+
+    width: 200px;
+    height: 300px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 20px 25px;
+    background-image: url(../images/home13.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+
+
+  .card13{
+
+
+    width: 200px;
+    height: 300px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 20px 25px;
+    background-image: url(../images/home14.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .card14{
+
+
+    width: 200px;
+    height: 300px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 20px 25px;
+    background-image: url(../images/home15.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .card15{
+
+
+    width: 200px;
+    height: 300px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 20px 25px;
+    background-image: url(../images/home16.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .card:hover{
+
+    transform: translateY(-10px);
+    
+  }
+  .card1:hover{
+
+    transform: translateY(-10px);
+  }
+  .card2:hover{
+
+    transform: translateY(-10px);
+  }
+  .card3:hover{
+
+    transform: translateY(-10px);
+  }
+  .card4:hover{
+
+    transform: translateY(-10px);
+  }
+  .card5:hover{
+
+    transform: translateY(-10px);
+  }
+  .card6:hover{
+
+    transform: translateY(-10px);
+  }
+  .card7:hover{
+
+    transform: translateY(-10px);
+  }
+  .card8:hover{
+
+    transform: translateY(-10px);
+  }
+  .card9:hover{
+
+    transform: translateY(-10px);
+  }
+  .card10:hover{
+
+    transform: translateY(-10px);
+  }
+  .card11:hover{
+
+    transform: translateY(-10px);
+  }
+
+  .card12:hover{
+
+    transform: translateY(-10px);
+  }
+
+  .card13:hover{
+
+    transform: translateY(-10px);
+  }
+
+  .card14:hover{
+
+    transform: translateY(-10px);
+  }
+
+  .card15:hover{
+
+    transform: translateY(-10px);
+  }
+
+ .tips{
+
+  background: #cfcf7b;
+
+ }
+
+ .body button b2{
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #0099ff;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+  border-radius: 40px;
+  box-shadow: 0 9px #999;
+}
+.body  button b2:hover,.body button:focus {
+  background: #088DE6;
+}
+.body  button b2:active{
+  background: #088DE6;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+
+
+
+
+
+.body1.button b1 {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #0099ff;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+  border-radius: 40px;
+  box-shadow: 0 9px #999;
+}
+.body1.button b1:hover,.body1 button:focus {
+  background: #088DE6;
+}
+.bpdy1.button b1:active{
+  background: #088DE6;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.adoption{
+  background-position: center;
+  background-size: cover;
+  background-image: url("https://www.aspca.org/sites/default/files/field/image/donate-bar/donate_image_footer-puppies_wide_0.jpg");
+}
