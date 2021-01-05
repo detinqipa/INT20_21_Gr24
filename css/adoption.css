@@ -818,3 +818,20 @@ background-color: rgb(93, 160, 126);
   background-size: cover;
   background-image: url("https://www.aspca.org/sites/default/files/field/image/donate-bar/donate_image_footer-puppies_wide_0.jpg");
 }
+h5{
+
+  text-align: center;
+  color: white;
+}
+h5:hover{
+  color:#fff;
+  text-shadow: 0 0 5px #999;
+}
+#d1:hover{
+
+  color: black;
+}
+#d1{
+
+ color: transparent;
+}
