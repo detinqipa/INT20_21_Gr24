@@ -41,24 +41,10 @@
   </script>
   </head>
 <body>
-	 <select name="" id="select" onClick="hello();">
-    <option>Change Bg-color</option>
-    <option style="background-color:#a5cd5c;">#a5cd5c</option>
-    <option style="background-color:#cd6d5c;">#cd6d5c</option>
-    <option style="background-color:#030202;">#030202</option>
-    <option style="background-color:#a1dff0;">#a1dff0</option>
-    <option style="background-color: white;">White</option>
-</select>
-<script>
-function hello(){
-let d = document.getElementById("select");
-let text = d.options[d.selectedIndex].value;
-document.body.style.backgroundColor=text;
-}
-</script>
+
     <header id="header">
         <div class="header">
-            <p style="margin-top: 15px; float: left"><a href="signup.html" style="text-decoration: none; color: #8c8c8c;">Sign Up</a> | <a href="login.html"style="text-decoration: none; color: #8c8c8c;"> Login</a>
+            <p style="margin-top: 15px; float: left"><a href="signup.html" style="text-decoration: none; color: #8c8c8c;" target="_blank">Sign Up</a> | <a href="login.html"style="text-decoration: none; color: #8c8c8c;" target="_blank"> Login</a>
             <div class="icons">
               <a href="https://www.linkedin.com/" target="_blank" class="fa fa-linkedin"></a>
               <a href="https://twitter.com/" target="_blank" class="fa fa-twitter"></a>
@@ -68,6 +54,21 @@ document.body.style.backgroundColor=text;
               </div>
             </p>
         </div>
+        <select name="" id="select" onClick="hello();">
+          <option>Change Bg-color</option>
+          <option style="background-color:#a5cd5c;">#a5cd5c</option>
+          <option style="background-color:#cd6d5c;">#cd6d5c</option>
+          <option style="background-color:#030202;">#030202</option>
+          <option style="background-color:#a1dff0;">#a1dff0</option>
+          <option style="background-color: white;">White</option>
+      </select>
+      <script>
+      function hello(){
+      let d = document.getElementById("select");
+      let text = d.options[d.selectedIndex].value;
+      document.body.style.backgroundColor=text;
+      }
+      </script>
     <div class="koka">
         <nav>
             <ul>
