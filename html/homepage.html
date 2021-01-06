@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html manifest="backup.appcache"> 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Homepage</title>
@@ -10,6 +10,17 @@
     <script src="../js/jquery.goup.min.js"></script>
     <script src="../js/paw.js"></script>
     <script src="../js/ora.js"></script>
+    <script>
+    jQuery(document).ready(function(){
+    jQuery.goup();
+    });
+
+    var appCache = window.applicationCache;
+    appCache.update(); // Attempt to update the user's cache.
+    if(appCache.status == window.applicationCache.UPDATEREADY) {
+      appCache.swapCache();  // The fetch was successful, swap in the new cache.
+    }
+  </script>
     <style>
     .latestb h4{ color:white;
 
