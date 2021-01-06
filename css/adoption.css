@@ -672,71 +672,86 @@ background-color: rgb(93, 160, 126);
   .card:hover{
 
     transform: translateY(-10px);
-    
+    background: rgb(194, 152, 204);
   }
   .card1:hover{
 
     transform: translateY(-10px);
+    background: rgb(173, 199, 209);
   }
   .card2:hover{
 
     transform: translateY(-10px);
+    background: rgb(209, 173, 173);
   }
   .card3:hover{
 
     transform: translateY(-10px);
+    background: rgb(173, 209, 175);
   }
   .card4:hover{
 
     transform: translateY(-10px);
+        background: rgb(173, 199, 209);
   }
   .card5:hover{
 
     transform: translateY(-10px);
+    background: rgb(209, 173, 173);
   }
   .card6:hover{
 
     transform: translateY(-10px);
+    background: rgb(216, 218, 110);
   }
   .card7:hover{
 
     transform: translateY(-10px);
+    background: rgb(165, 207, 154);
   }
   .card8:hover{
 
     transform: translateY(-10px);
+    background: rgb(197, 197, 171);
   }
   .card9:hover{
 
     transform: translateY(-10px);
+    background: rgb(179, 214, 224);
   }
   .card10:hover{
 
     transform: translateY(-10px);
+    background: rgb(206, 179, 224);
   }
   .card11:hover{
 
     transform: translateY(-10px);
+    background: rgb(224, 179, 205);
   }
 
   .card12:hover{
 
     transform: translateY(-10px);
+    background: rgb(235, 235, 114);
   }
 
   .card13:hover{
 
     transform: translateY(-10px);
+    background: rgb(179, 214, 224);
   }
 
   .card14:hover{
 
     transform: translateY(-10px);
+    background: rgb(179, 224, 185);
   }
 
   .card15:hover{
 
     transform: translateY(-10px);
+    background: rgb(224, 179, 179);
   }
 
  .tips{
@@ -802,4 +817,21 @@ background-color: rgb(93, 160, 126);
   background-position: center;
   background-size: cover;
   background-image: url("https://www.aspca.org/sites/default/files/field/image/donate-bar/donate_image_footer-puppies_wide_0.jpg");
+}
+h5{
+
+  text-align: center;
+  color: white;
+}
+h5:hover{
+  color:#fff;
+  text-shadow: 0 0 5px #999;
+}
+#d1:hover{
+
+  color: black;
+}
+#d1{
+
+ color: transparent;
 }

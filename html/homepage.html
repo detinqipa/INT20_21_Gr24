@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html manifest="backup.appcache"> 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Homepage</title>
@@ -9,7 +9,17 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="../js/jquery.goup.min.js"></script>
     <script src="../js/paw.js"></script>
-    <script src="../js/ora.js"></script>
+    <script>
+    jQuery(document).ready(function(){
+    jQuery.goup();
+    });
+
+    var appCache = window.applicationCache;
+    appCache.update(); // Attempt to update the user's cache.
+    if(appCache.status == window.applicationCache.UPDATEREADY) {
+      appCache.swapCache();  // The fetch was successful, swap in the new cache.
+    }
+  </script>
     <style>
     .latestb h4{ color:white;
 
@@ -169,7 +179,7 @@
                 Before the arrival of industrial whaling to the sub-Antarctic 
                 island of South Georgia in the early 20th century...</p>
              <br>
-             <a href="https://www.bbc.com/news/science-environment-54994814" class="link_button"><span>More</span></a>
+             <a href="news/lajmi1.html" class="link_button"><span>More</span></a>
      </div>
    </td>
    <td>
@@ -262,6 +272,50 @@
           <div class="clr"></div>
           </div>
           </div>
+          <div id="counter" style="text-align: center;color: green;"></div>
+          <script>
+var visits = localStorage.getItem('on_load_counter');
+var sessionVisits = sessionStorage.getItem('session_counter');
+
+if (visits === null) {
+    visits = 0;
+}
+if (sessionVisits === null) {
+  sessionVisits = 0;
+}
+
+sessionVisits++;
+visits++;
+
+localStorage.setItem("on_load_counter", visits);
+sessionStorage.setItem("session_counter", sessionVisits)
+
+document.getElementById('counter').innerHTML = "You visited our webside  " + visits + " times (" + sessionVisits + " time in this sesion).Your interest means a lot to us!";
+</script>
+
+<p style="text-align: center;color: green">You are in our webside for  <output id="result"></output> seconds</p>
+<script>
+var w;
+
+window.onload = function() {
+  if(typeof(Worker) !== "undefined") {
+    if(typeof(w) == "undefined") {
+      w = new Worker("../js/counter.js");
+    }
+    w.onmessage = function(event) {
+      document.getElementById("result").innerHTML = event.data;
+    };
+  } else {
+    document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Workers...";
+  }
+}
+
+function stopWorker() {
+  w.terminate();
+  w = undefined;
+}
+</script>
+
 
   </body>
   <footer>
