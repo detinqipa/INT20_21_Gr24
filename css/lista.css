@@ -209,6 +209,9 @@ nav a:hover::after {
 .lists_page_photo11 li{
   background-image: url(../images/photo11.jpg);
 }
+.lists_page_photo12 li{
+  background-image: url('https://www.wonderslist.com/wp-content/uploads/2014/07/Glowing-Blue-Jellyfish.jpg')
+}
 .lists_page_button a{
 
 text-decoration: none;
