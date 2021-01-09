@@ -30,9 +30,13 @@
             <td colspan="4">
         
                 <p style="margin-left: 10px;margin-right: 10px;">
-                   <label > Name and Surname:</label></br>
-                   <input type="text" name="Name and Surname "size="70" placeholder="Name and Surname" required="">
+                   <label > First Name</label></br>
+                   <input type="text" name="firstname "size="70" placeholder="firstname" required="">
                 </p>
+                <p style="margin-left: 10px;margin-right: 10px;">
+                  <label > Last Name</label></br>
+                  <input type="text" name="lastname "size="70" placeholder="lastname" required="">
+               </p>
 
                 <p style="margin-left: 10px;margin-right: 10px;">
                     <label for="Email">Email: </label></br>
@@ -41,7 +45,7 @@
 
                 <p style="margin-left: 10px; margin-right: 10px;">
                      <label for="Password">Password:</label><br>
-                     <input type="password" name="Password"size="70" placeholder="Password" required="">
+                     <input type="password" name="Password"size="70" placeholder="password" required="">
                 </p>
 
             </td>
@@ -131,8 +135,57 @@
    </table>
   </form>
 </div>
+<script>
+// Wait for the DOM to be ready
+$(function() {
+  // Initialize form validation on the registration form.
+  // It has the name attribute "registration"
+  $("form[name='registration']").validate({
+    // Specify validation rules
+    rules: {
+      // The key name on the left side is the name attribute
+      // of an input field. Validation rules are defined
+      // on the right side
+      firstname: "required",
+      lastname: "required",
+      Birth:"required",
+      Gender:"required",
+      Country:"required",
+      City:"required",
+      email: {
+        required: true,
+        // Specify that email should be validated
+        // by the built-in "email" rule
+        email: true
+      },
+      password: {
+        required: true,
+        minlength: 5
+      }
+    },
+    // Specify validation error messages
+    messages: {
+      firstname: "Please enter your firstname",
+      lastname: "Please enter your lastname",
+      Birth:"Please enter your birth date",
+      Gender:"Please enter your gender",
+      Country:"Please enter your country",
+      City:"Please enter your city",
+      Password: {
+        required: "Please provide a password",
+        minlength: "Your password must be at least 5 characters long"
+      },
+      email: "Please enter a valid email address"
+    },
+    // Make sure the form is submitted to the destination defined
+    // in the "action" attribute of the form when valid
+    submitHandler: function(form) {
+      form.submit();
+    }
+  });
+});
 
-
+</script>
 
 </body>
 </html>
