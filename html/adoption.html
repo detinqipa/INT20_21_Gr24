@@ -505,7 +505,88 @@ background-size: cover;">
 
 </div>
 
+<p align="center" style="background-color:powderblue">How many animals would you like to adopt?</p>
+ <input type="text" id="numberDay" class="ttt">
+ <style>
+ .ttt
+    {
+display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+  background-color:#e8dc41;
+    text-align: center;
+    color: blue;
 
+     
+    }
+</style>
+<button id="button" class="pozita">Check</button>
+<style>
+  .pozita
+  {
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+     background-color:#e8dc41;
+     text-align: center;
+    color: red;
+  
+   
+
+
+  }
+</style>
+<script>
+let clickButton = document.getElementById("button");
+clickButton.addEventListener("click", function weekDay() {
+
+  let day = Number(document.getElementById("numberDay").value);
+
+  switch (day) {
+      case 0:
+      alert("Hmmm.. maybe you should think again!");
+      break;
+    case 1:
+      alert("Good choice,now you are never alone!")
+      break;
+    case 2:
+      alert("A friend for you and your animal friend,that's sweet!");
+      break;
+    case 3:
+      alert("A house full of harmony and love,that's your house!");
+      break;
+    case 4:
+      alert("From now on you've got Lots of Hugs and Sweet memories!");
+      break;
+    case 5:
+      alert("Oo you're one of the biggest animal's supporter!");
+      break;
+    case 6:
+      alert("More than 5,sure with no regrets!");
+      break;
+    case 7:
+      alert("One for a day and than naming them by weekdays,that's cool!");
+      break;
+      case 8:
+      alert("Now you will never be alone,always having friends to play with!");
+      break;
+      case 9:
+      alert("Hmm,we suppose you're a big family admirer1");
+      break;
+      case 10:
+      alert("It takes nothing away from a human to be kind with an animal,you are truly very kind!");
+      break;
+      default:
+      alert("Insane number,we are your biggest fan!")
+      break;
+
+  }
+
+})
+</script>
 </body>
 <footer>
     <div class="footer-main">
