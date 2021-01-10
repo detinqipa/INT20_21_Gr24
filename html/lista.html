@@ -54,21 +54,7 @@
               </div>
             </p>
         </div>
-        <select name="" id="select" onClick="hello();">
-          <option>Change Bg-color</option>
-          <option style="background-color:#a5cd5c;">#a5cd5c</option>
-          <option style="background-color:#cd6d5c;">#cd6d5c</option>
-          <option style="background-color:#030202;">#030202</option>
-          <option style="background-color:#a1dff0;">#a1dff0</option>
-          <option style="background-color: white;">White</option>
-      </select>
-      <script>
-      function hello(){
-      let d = document.getElementById("select");
-      let text = d.options[d.selectedIndex].value;
-      document.body.style.backgroundColor=text;
-      }
-      </script>
+      
     <div class="koka">
         <nav>
             <ul>
@@ -205,7 +191,38 @@
 </body>
 </div>
 </header>
+<p align="center" style="background-color:#60d1b9">Click button below to show number 10 in decimal,binar,octal and hexadecimal form</p>
 
+<button onclick="myFunction()" class="pozita">Click</button>
+<style>
+	.pozita
+  {
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    color: red;
+    text-align: center;
+    background-color:#7ae69c;
+
+</style>
+
+<p id="demo" align="center"></p>
+
+<script>
+function myFunction() {
+  var num = 10;
+  var a = num.toString();
+  var b = num.toString(2);
+  var c = num.toString(8);
+  var d = num.toString(16);
+
+  var n = a + "<br>" + b + "<br>" + c + "<br>" + d;
+
+  document.getElementById("demo").innerHTML=n;
+}
+</script>
 <footer>
     <div class="footer-main">
         <div class="footer-inner">
