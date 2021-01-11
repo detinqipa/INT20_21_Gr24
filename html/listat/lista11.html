@@ -26,6 +26,9 @@
   <style>
     th, td {
     padding: 10px;
+    background-image: url(../../images/b4.jpg);
+    box-shadow: 5px 10px #888888;
+    background-origin: padding-box;
     }
     .empty-cell {
       background: red;
@@ -78,12 +81,12 @@
     be of animal origin are listed.</b></p>
 
       <table border="1" cellspacing="0" class="center-table">
-        <tr style="background: #F0F0F0; color: #0299FC">
-            <td> Nr. </td>
-          <td> Product name </td>
-          <td> Generic name </td>
-          <td> Therapeutic class </td>
-          <td> Comment </td>
+        <tr style="background: #F0F0F0; color: #068d18">
+            <td><b> Nr.</b> </td>
+          <td><b> Product name</b> </td>
+          <td><b> Generic name </b></td>
+          <td><b> Therapeutic class </b></td>
+          <td><b> Comment </b></td>
           
         </tr>
         <tr>
@@ -185,6 +188,31 @@
   <br>
   <br>
   <br>
+  <button onclick="myFunction()" class="pozita">Click here to see how many percentage of medicaments come from animals</button>
+<style>
+  .pozita
+  {
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+     background-color:#dcf5e4;
+     text-align: center;
+    color: blue;
+  
+  </style>
+<p id="demo" align="center" style="color:red" ></p>
+<script>
+Number.prototype.myMethod = function() {
+  return this.valueOf() / 2;
+};
+
+function myFunction() {
+  var n = 17.4;
+  document.getElementById("demo").innerHTML = n.myMethod();
+}
+</script>
   </body>
   <footer>
     <div class="footer-main">
@@ -199,7 +227,7 @@
       </svg>
       <img style="margin-top:5px;" src="../../images/C.png" width="150px" height="50px"/>
       <p>
-      Tekst per about te faqes</p>
+        This website was created for educational purposes, as a project in the subject INTERNET.</p>
       <a style="float: right" href="aboutus.html" >More &raquo</a>
       </div>
       </div>
@@ -214,24 +242,24 @@
           <li style="border-bottom: 1px solid #333333"><a href="https://faunalytics.org/">&raquo Fauna Analytics</a></li>
           <li style="border-bottom: 1px solid #333333"><a href="https://www.thedodo.com/">&raquo The Dodo</a></li>
           <li style="border-bottom: 1px solid #333333"><a href="http://hsi.org/">&raquo Humane Society International</a></li>
-  
+
         </ul>
         </div>
         </div>
         <div class="footer-left">
         <div class="footer-box">
           <h6>Latest: </h6>
-          <h4 ><a  href="linku i fundit si postim" >Linku i fundit si postim</a></h4>
+          <h4 ><a  href="listat/lista12.html" >10 Spectacular Glowing Animals</a></h4>
       
-          <p>Tekst
-            <a style="float: right" href="linku me tekst" >More &raquo</a>
+          <p>The ability to produce and emit light in the dark biochemically is called bioluminescence, and it is one of the most fascinating phenomena in the nature
+            <a style="float: right" href="listat/lista12.html" >More &raquo</a>
             <br>
             <br>
             <br>
             <div class="latestb">
-              <h4 ><a  href="linku i parafundit" >Linku i parafundit si postim</a></h4>
-              <p>Tekst
-                <a style="float: right" href="linku i parafundit" >More &raquo</a>
+              <h4 ><a  href="news/lajmi13.html" >Prehistoric 'swamp king' crocodile of Australia was over 16 feet long, new study says</a></h4>
+              <p>This ancient creature would have looked a lot like today's Indo-Pacific crocodile "on steroids," a researcher said.
+                <a style="float: right" href="news/lajmi13.html" >More &raquo</a>
           </div>
           </div>
           </div>

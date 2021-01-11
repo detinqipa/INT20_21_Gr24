@@ -44,11 +44,11 @@
     hello = document.querySelector(".hello");    
   if (hr < 10) {
     bstyle.backgroundColor = "yellow";
-    bstyle.color = "black";
+    bstyle.color = "red";
     hello.innerText = "Have a good morning";
   } else if (hr < 20) {
-    bstyle.backgroundColor = "green";
-    bstyle.color = "white";
+    bstyle.backgroundColor = "white";
+    bstyle.color = "black";
     hello.innerText ="Have a good day!";
   } else {
     bstyle.backgroundColor = "black";
@@ -63,7 +63,7 @@ updateBackground();
 
 <header id="header">
     <div class="header">
-      <p style="margin-top: 15px; float: left"><a href="signup.html" style="text-decoration:none; color:#8c8c8c;">Sign up</a> | <a href="login.html" style="text-decoration:none; color: #8c8c8c;">Login</a>
+      <p style="margin-top: 15px; float: left"><a href="signup.html" style="text-decoration:none; color:#8c8c8c;" target="_blank">Sign up</a> | <a href="login.html" style="text-decoration:none; color: #8c8c8c;" target="_blank">Login</a>
       <div class="icons">
         <a href="https://www.linkedin.com/" target="_blank" class="fa fa-linkedin"></a>
         <a href="https://twitter.com/" target="_blank" class="fa fa-twitter"></a>
@@ -244,7 +244,17 @@ updateBackground();
   showPage(pageIndex);
 </script>
 </br></br>
+    <audio src="../audio/breakingNews.mp3" controls autoplay loop class="vendi"></audio>
+<style>
+	.vendi
+	{
+		display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
     
+	}
+</style>
 </body>
 <footer>
     <div class="footer-main">
@@ -259,7 +269,7 @@ updateBackground();
         </svg>
         <img style="margin-top:5px;" src="../images/C.png" width="150px" height="50px"/>
         <p>
-        Tekst per about te faqes</p>
+          This website was created for educational purposes, as a project in the subject INTERNET.</p>
         <a style="float: right" href="aboutus.html" >More &raquo</a>
         </div>
         </div>
@@ -281,17 +291,17 @@ updateBackground();
           <div class="footer-left">
           <div class="footer-box">
             <h6>Latest: </h6>
-            <h4 ><a  href="linku i fundit si postim" >Linku i fundit si postim</a></h4>
+            <h4 ><a  href="listat/lista12.html" >10 Spectacular Glowing Animals</a></h4>
         
-            <p>Tekst
-              <a style="float: right" href="linku me tekst" >More &raquo</a>
+            <p>The ability to produce and emit light in the dark biochemically is called bioluminescence, and it is one of the most fascinating phenomena in the nature
+              <a style="float: right" href="listat/lista12.html" >More &raquo</a>
               <br>
               <br>
               <br>
               <div class="latestb">
-                <h4 ><a  href="linku i parafundit" >Linku i parafundit si postim</a></h4>
-                <p>Tekst
-                  <a style="float: right" href="linku i parafundit" >More &raquo</a>
+                <h4 ><a  href="news/lajmi13.html" >Prehistoric 'swamp king' crocodile of Australia was over 16 feet long, new study says</a></h4>
+                <p>This ancient creature would have looked a lot like today's Indo-Pacific crocodile "on steroids," a researcher said.
+                  <a style="float: right" href="news/lajmi13.html" >More &raquo</a>
             </div>
             </div>
             </div>

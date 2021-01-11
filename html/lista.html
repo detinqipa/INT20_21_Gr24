@@ -41,24 +41,10 @@
   </script>
   </head>
 <body>
-	 <select name="" id="select" onClick="hello();">
-    <option>Change Bg-color</option>
-    <option style="background-color:#a5cd5c;">#a5cd5c</option>
-    <option style="background-color:#cd6d5c;">#cd6d5c</option>
-    <option style="background-color:#030202;">#030202</option>
-    <option style="background-color:#a1dff0;">#a1dff0</option>
-    <option style="background-color: white;">White</option>
-</select>
-<script>
-function hello(){
-let d = document.getElementById("select");
-let text = d.options[d.selectedIndex].value;
-document.body.style.backgroundColor=text;
-}
-</script>
+
     <header id="header">
         <div class="header">
-            <p style="margin-top: 15px; float: left"><a href="signup.html" style="text-decoration: none; color: #8c8c8c;">Sign Up</a> | <a href="login.html"style="text-decoration: none; color: #8c8c8c;"> Login</a>
+            <p style="margin-top: 15px; float: left"><a href="signup.html" style="text-decoration: none; color: #8c8c8c;" target="_blank">Sign Up</a> | <a href="login.html"style="text-decoration: none; color: #8c8c8c;" target="_blank"> Login</a>
             <div class="icons">
               <a href="https://www.linkedin.com/" target="_blank" class="fa fa-linkedin"></a>
               <a href="https://twitter.com/" target="_blank" class="fa fa-twitter"></a>
@@ -68,6 +54,7 @@ document.body.style.backgroundColor=text;
               </div>
             </p>
         </div>
+      
     <div class="koka">
         <nav>
             <ul>
@@ -179,6 +166,11 @@ document.body.style.backgroundColor=text;
               <li><h1> 10 Medicines/pharmaceuticals of animal origin</h1></li>
             </div>
     </a>
+    <a href="listat/lista12.html">
+    	<div class="lists_page_photo12">
+    		<li><h1>10 Spectacular Glowing Animals</h1></li>
+    	</div>
+    </a>
     </div>
 </div>
 
@@ -199,7 +191,38 @@ document.body.style.backgroundColor=text;
 </body>
 </div>
 </header>
+<p align="center" style="background-color:#60d1b9">Click button below to show number 10 in decimal,binar,octal and hexadecimal form</p>
 
+<button onclick="myFunction()" class="pozita">Click</button>
+<style>
+	.pozita
+  {
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    color: red;
+    text-align: center;
+    background-color:#7ae69c;
+
+</style>
+
+<p id="demo" align="center"></p>
+
+<script>
+function myFunction() {
+  var num = 10;
+  var a = num.toString();
+  var b = num.toString(2);
+  var c = num.toString(8);
+  var d = num.toString(16);
+
+  var n = a + "<br>" + b + "<br>" + c + "<br>" + d;
+
+  document.getElementById("demo").innerHTML=n;
+}
+</script>
 <footer>
     <div class="footer-main">
         <div class="footer-inner">
@@ -213,7 +236,7 @@ document.body.style.backgroundColor=text;
         </svg>
         <img style="margin-top:5px;" src="../images/C.png" width="150px" height="50px"/>
         <p>
-        Tekst per about te faqes</p>
+          This website was created for educational purposes, as a project in the subject INTERNET.</p>
         <a style="float: right" href="aboutus.html" >More &raquo</a>
         </div>
         </div>
@@ -235,17 +258,17 @@ document.body.style.backgroundColor=text;
           <div class="footer-left">
           <div class="footer-box">
             <h6>Latest: </h6>
-            <h4 ><a  href="linku i fundit si postim" >Linku i fundit si postim</a></h4>
+            <h4 ><a  href="listat/lista12.html" >10 Spectacular Glowing Animals</a></h4>
         
-            <p>Tekst
-              <a style="float: right" href="linku me tekst" >More &raquo</a>
+            <p>The ability to produce and emit light in the dark biochemically is called bioluminescence, and it is one of the most fascinating phenomena in the nature
+              <a style="float: right" href="listat/lista12.html" >More &raquo</a>
               <br>
               <br>
               <br>
               <div class="latestb">
-                <h4 ><a  href="linku i parafundit" >Linku i parafundit si postim</a></h4>
-                <p>Tekst
-                  <a style="float: right" href="linku i parafundit" >More &raquo</a>
+                <h4 ><a  href="news/lajmi13.html" >Prehistoric 'swamp king' crocodile of Australia was over 16 feet long, new study says</a></h4>
+                <p>This ancient creature would have looked a lot like today's Indo-Pacific crocodile "on steroids," a researcher said.
+                  <a style="float: right" href="news/lajmi13.html" >More &raquo</a>
             </div>
             </div>
             </div>

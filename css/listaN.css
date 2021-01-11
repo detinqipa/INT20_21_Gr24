@@ -304,12 +304,13 @@ a img{
 .folder-lista h1{
   margin-top:10px;
   padding-top:10px;
+  background-image: linear-gradient(to right, #A9A9A9,  white , #A9A9A9);
   text-align: center;
-  color: #0299FC;
+  color: #03520d;
 }
 .folder-lista h2{
   text-align:center;
-  color:#0299FC;
+  color:#03520d;
   family-font: Times New Roman Georgia;
   padding-top: 5px;
   padding-bottom: 10px;
