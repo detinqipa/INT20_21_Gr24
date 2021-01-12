@@ -210,7 +210,11 @@ nav a:hover::after {
   background-image: url(../images/photo11.jpg);
 }
 .lists_page_photo12 li{
-  background-image: url('https://www.wonderslist.com/wp-content/uploads/2014/07/Glowing-Blue-Jellyfish.jpg')
+  background-image: url('https://www.wonderslist.com/wp-content/uploads/2014/07/Glowing-Blue-Jellyfish.jpg%27')
+}
+
+.lists_page_photo13 li{
+  background-image: url(../images/Loyal.jpg)
 }
 .lists_page_button a{
 
