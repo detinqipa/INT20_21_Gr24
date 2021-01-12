@@ -18,6 +18,30 @@
      color:#ffffff;
 
    }
+   button {
+       font-family: "Roboto", sans-serif;
+       text-transform: uppercase;
+       outline: 0;
+       background: #ff0000;
+       border: 0;
+       padding: 15px;
+       color: #FFFFFF;
+       font-size: 14px;
+       -webkit-transition: all 0.3 ease;
+       transition: all 0.3 ease;
+       cursor: pointer;
+       border-radius: 40px;
+       box-shadow: 0 9px #999;
+       margin-left: 700px;
+     }
+   button printo:hover,.body1 button b1:focus {
+       background: #e60808;
+     }
+   button printo:active{
+       background: #e60808;
+       box-shadow: 0 5px #666;
+       transform: translateY(4px);
+     }
   </style>
   <script>
     jQuery(document).ready(function(){
@@ -75,6 +99,8 @@
 <address style="float: right;">
   Shkruar nga <a href="mailto:sarahaliti17@hotmail.com">Sara Haliti</a>
 </address>
+<br>
+<button id="printo" onclick="window.print()">Print the news</button>
 <div class="read-more">
 
   <h2 style="color: #0299FC;">Read More</h2>

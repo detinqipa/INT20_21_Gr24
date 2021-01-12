@@ -14,10 +14,25 @@
    }
 .latestb   h4 a:hover{
      font-family: "open Sans";
-     font-size:17px;
+     font-size:30px;
      color:#ffffff;
 
    }
+.grid-container {
+  display: grid;
+  grid-template-columns: 10% 30% 23% 23% ;
+  grid-gap: 20px;
+  background-color: #5df3f8;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(252, 253, 253, 0.8);
+  border: 5px solid rgb(13, 14, 13);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 20px;
+}
    </style>
   <script>
     jQuery(document).ready(function(){
@@ -95,105 +110,58 @@ $(document).ready(function(){
      Whether you measure in terms of weight, height or length, there is no denying some animals are huge in comparison to others in their class.
     So, if you  want to know which animals are the largest ...
   </b></p>
-  <div id="div1">Click here to see the list</div>
-  <table id ="div2" width="70%" border="1" cellspacing="0" class="center-table">
-    <tr style="background: #F0F0F0; color: #0299FC">
-      <td> Rankinkg </td>
-      <td> Animal </td>
-      <td> Size </td>
-      <td> Weight </td>
-    </tr>
-    <tr>
-      <td> 1 </td>
-      <td class="folder-lista"> Blue Whale </td>
-      <td> 98 ft (30 m) </td>
-      <td> 180 tonnes </td>
-    </tr>
-    <tr>
-      <td> 2 </td>
-      <td class="folder-lista"> Colossal Squid </td>
-      <td> 46 ft (14 m) </td>
-      <td> 1100 pounds (500 kg) </td>
-    </tr>
-    <tr>
-      <td> 3 </td>
-      <td class="folder-lista"> Giraffe </td>
-      <td> 40 ft (12 m) </td>
-      <td> 22 tones </td>
-    </tr>
-    <tr>
-      <td> 4 </td>
-      <td class="folder-lista"> African Elephants </td>
-      <td> 35 ft (10.6 m) </td>
-      <td> 6350 kg </td>
-    </tr>
-    <tr>
-      <td> 5 </td>
-      <td class="folder-lista"> Whale Shark </td>
-      <td> 19 ft (5.8 m) </td>
-      <td> 1500-3000 pounds </td>
-    </tr>
-    <tr>
-      <td> 6 </td>
-      <td class="folder-lista"> Saltwater Crocodile </td>
-      <td> 17 ft (5.2 m) </td>
-      <td> 453 kg </td>
-    </tr>
-    <tr>
-      <td> 7 </td>
-      <td class="folder-lista"> Brown Bear </td>
-      <td> 10 ft (3 m) </td>
-      <td> 907 kg </td>
-    </tr>
-    <tr>
-      <td> 8 </td>
-      <td class="folder-lista"> Ostrich </td>
-      <td> 9 ft (2.7 m) </td>
-      <td> 344 Ibs (156 kg) </td>
-    </tr>
-    <tr>
-      <td> 9 </td>
-      <td class="folder-lista"> Chinese Salamander </td>
-      <td> 6 ft (1.8 m) </td>
-      <td> 30-60 kg </td>
-    </tr>
-    <tr>
-      <td> 10 </td>
-      <td class="folder-lista"> Goliath Beetle </td>
-      <td> 4.5 inches (11.5 cm) </td>
-      <td> 3.5 ounces (100 g) </td>
-    </tr>
-    
-  </table>
+  <div class="grid-container">
+    <div class="item1">Ranking</div>
+    <div class="item2">Animal</div>
+    <div class="item3">Size</div>  
+    <div class="item4">Weight</div>
+    <div class="item5">1</div>
+    <div class="item6">Blue Whale</div>
+    <div class="item7">30 m</div>
+    <div class="item8">180 tonnes</div>
+    <div class="item9">2</div>
+    <div class="item10">Colossal Squid</div>
+    <div class="item11">14 m</div>
+    <div class="item12">500 kg</div>
+    <div class="item13">3</div>
+    <div class="item13">Giraffe</div>
+    <div class="item14">12 m</div>
+    <div class="item15">22 tonnes</div>
+    <div class="item16">4</div>
+    <div class="item17">African Elephant</div>
+    <div class="item18">10.6 m</div>
+    <div class="item19">6350 kg</div>
+    <div class="item20">5</div>
+    <div class="item21">Whale Shark</div>
+    <div class="item22">5.8 m</div>
+    <div class="item23">3000 pounds</div>
+    <div class="item24">6</div>
+    <div class="item25">Saltwater Crocodile</div>
+    <div class="item26">5.2 m</div>
+    <div class="item27">453 kg</div>
+    <div class="item28">7</div>
+    <div class="item29">Brown Bear</div>
+    <div class="item30">3 m</div>
+    <div class="item31">907 kg</div>
+    <div class="item32">8</div>
+    <div class="item33">Ostrich</div>
+    <div class="item34">2.7 m</div>
+    <div class="item35">156 kg</div>
+    <div class="item36">9</div>
+    <div class="item37">Chinese Salamander</div>
+    <div class="item38">1.8 m</div>
+    <div class="item39">60 kg</div>
+    <div class="item40">10</div>
+    <div class="item41">Goliath Beetle</div>
+    <div class="item42">11.5 cm</div>
+    <div class="item43">100 g</div>
+  </div>
 </div>
-</div>
-<br>
-<br>
-<br>
-<br>
-<button onclick="myFunction()" class="pozita">Click here to see weight of blue whale in kg</button>
-<style>
-	.pozita
-  {
 
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 30%;
-     background-color:#dcf5e4;
-     text-align: center;
-    color: blue;
-  
-	</style>
-
-<p id="demo" align="center" style="color:red" ></p>
-
-<script>
-function myFunction() {
-  var num = 163293.37567;
-  document.getElementById("demo").innerHTML = num.toPrecision(2);
-}
-</script>
+<br>
+<br>
+<br>
+<br>
 </body>
 <footer>
   <div class="footer-main">
@@ -208,7 +176,7 @@ function myFunction() {
     </svg>
     <img style="margin-top:5px;" src="../../images/C.png" width="150px" height="50px"/>
     <p>
-      This website was created for educational purposes, as a project in the subject INTERNET.</p>
+    Tekst per about te faqes</p>
     <a style="float: right" href="aboutus.html" >More &raquo</a>
     </div>
     </div>
@@ -230,17 +198,17 @@ function myFunction() {
       <div class="footer-left">
       <div class="footer-box">
         <h6>Latest: </h6>
-        <h4 ><a  href="listat/lista12.html" >10 Spectacular Glowing Animals</a></h4>
+        <h4 ><a  href="linku i fundit si postim" >Linku i fundit si postim</a></h4>
     
-        <p>The ability to produce and emit light in the dark biochemically is called bioluminescence, and it is one of the most fascinating phenomena in the nature
-          <a style="float: right" href="listat/lista12.html" >More &raquo</a>
+        <p>Tekst
+          <a style="float: right" href="linku me tekst" >More &raquo</a>
           <br>
           <br>
           <br>
           <div class="latestb">
-            <h4 ><a  href="news/lajmi13.html" >Prehistoric 'swamp king' crocodile of Australia was over 16 feet long, new study says</a></h4>
-            <p>This ancient creature would have looked a lot like today's Indo-Pacific crocodile "on steroids," a researcher said.
-              <a style="float: right" href="news/lajmi13.html" >More &raquo</a>
+            <h4 ><a  href="linku i parafundit" >Linku i parafundit si postim</a></h4>
+            <p>Tekst
+              <a style="float: right" href="linku i parafundit" >More &raquo</a>
         </div>
         </div>
         </div>

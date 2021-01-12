@@ -281,6 +281,21 @@ background-size: cover;">
 <h2 style="margin-left: 530px;">Hover close to the animal's face and Look for Options!</h1>
 </div>
 
+<script>
+  var x = document.getElementById("demo");
+  function getLocation() {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(showPosition);
+    } else {
+      x.innerHTML = "Geolocation is not supported by this browser.";
+    }
+  }
+  function showPosition(position) {
+    x.innerHTML = "Kordinatat tuaja gjeografike te vendodhjes jane, latituda-" + position.coords.latitude +
+    " dhe longituda-" + position.coords.longitude+". Your informations will be used only by our page, for extra statistics about adoptions.";
+  }
+  getLocation();
+  </script>
 
 <div class="row1">  
 
