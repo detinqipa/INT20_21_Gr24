@@ -210,6 +210,31 @@ With small and safe steps, we will work until we see no stray animals in the str
 <iframe class="Googlemap" style="width: 100%;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1783626.979221921!2d21.002325002622882!3d42.75904528638854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13537af354bf7df1%3A0xbfffeedfabc31791!2sKosovo!5e0!3m2!1sen!2s!4v1610302235880!5m2!1sen!2s" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 
 </br></br></br>
+<h2>Please rate this website from 1-10!</h2>
+<br>
+<input id="demo" type="text">
+<div class="button">
+<button type="button" onclick="myFunction()">Subbmit</button>
+<p id="p01"></p>
+</div>
+<script>
+function myFunction() {
+  var message, x;
+  message = document.getElementById("p01");
+  message.innerHTML = "";
+  x = document.getElementById("demo").value;
+  try { 
+    if(x == "")  throw "empty";
+    if(isNaN(x)) throw "not a number";
+    x = Number(x);
+    if(x < 1)  throw "too low";
+    if(x > 10)   throw "too high";
+  }
+  catch(err) {
+    message.innerHTML = "Input is " + err;
+  }
+}
+</script>
 </body>
 <footer>
    <div class="footer-main">
