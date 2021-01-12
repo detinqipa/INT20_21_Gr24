@@ -447,7 +447,7 @@ footer{
       display: inline-block;
       padding: 8px;
       color: white;
-      background-color:#0099ff;
+      background-color:#f88d29;
       text-align: center;
       cursor: pointer;
       width: 100%;
@@ -499,7 +499,7 @@ footer{
     z-index: 2;
   }
   .flip-card-back {
-    background-color:#0099ff;
+    background-color:#afc9da;
     transform: rotateY(180deg);
     z-index: 1;
   }
