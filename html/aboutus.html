@@ -18,6 +18,29 @@
      color:#ffffff;
 
    }
+   .button1 #b4 {
+       font-family: "Roboto", sans-serif;
+       text-transform: uppercase;
+       outline: 0;
+       background: #f700ff;
+       border: 0;
+       padding: 15px;
+       color: #FFFFFF;
+       font-size: 14px;
+       -webkit-transition: all 0.3 ease;
+       transition: all 0.3 ease;
+       cursor: pointer;
+       border-radius: 40px;
+       box-shadow: 0 2px #999;
+     }
+   .button1 #b4:hover,.button1 #b4:focus {
+       background: #e608db;
+     }
+   .button1 #b4:active{
+       background: #e608c8;
+       box-shadow: 0 5px #666;
+       transform: translateY(4px);
+     }
    </style>
   <script>
     jQuery(document).ready(function(){
@@ -94,7 +117,7 @@ With small and safe steps, we will work until we see no stray animals in the str
           <div class="flip-card">
             <div class="flip-card-inner">
               <div class="flip-card-front">
-                <img src="../images/Rinesa3.jpg" alt="Rinesë Kqiku" style="width:100%;"><!--Rinesa foto-->
+                <img src="../images/Rinesa3.jpg" alt="Rinesë Kqiku" style="width:100%; height: 100%;"><!--Rinesa foto-->
               </div>
               <div class="flip-card-back">
                 </br></br></br></br></br>
@@ -210,11 +233,13 @@ With small and safe steps, we will work until we see no stray animals in the str
 <iframe class="Googlemap" style="width: 100%;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1783626.979221921!2d21.002325002622882!3d42.75904528638854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13537af354bf7df1%3A0xbfffeedfabc31791!2sKosovo!5e0!3m2!1sen!2s!4v1610302235880!5m2!1sen!2s" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 
 </br></br></br>
-<h2>Please rate this website from 1-10!</h2>
+<h2 class="rate" style="text-align: center;"> Please rate this website from 1-10!</h2>
 <br>
-<input id="demo" type="text">
-<div class="button">
-<button type="button" onclick="myFunction()">Subbmit</button>
+
+<div class="button1" style="align-items: center;margin-left: 700px;" >
+<input id="demo" type="text" style="border-radius: 30px;"><br><br>
+<button type="button" id="b4" onclick="myFunction()" style="margin-left: 45px;">Submit</button>
+<br>
 <p id="p01"></p>
 </div>
 <script>
@@ -235,6 +260,7 @@ function myFunction() {
   }
 }
 </script>
+<br>
 </body>
 <footer>
    <div class="footer-main">
