@@ -7,6 +7,15 @@
   <link rel="stylesheet" href="../../css/listaN.css" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="../../js/jquery.goup.min.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script>
+$(document).ready(function(){
+  $("#btn1").click(function(){
+    $("#one").append(" <b>The greatness of a nation and its moral progress can be judged by the way its animals are treated.</b>.");
+  });
+
+});
+</script>
   <style>
 .latestb h4{ color:white;
 
@@ -116,6 +125,44 @@
 
 </div>
 </div>
+<br><br><br>
+<button id="btn1">Click to show a quote from Mahatma Gandhi</button>
+<style>
+   button {
+       font-family: "Roboto", sans-serif;
+       text-transform: uppercase;
+       outline: 0;
+       background: #34ebdb;
+       border: 0;
+       padding: 15px;
+       color: #FFFFFF;
+       font-size: 14px;
+       -webkit-transition: all 0.3 ease;
+       transition: all 0.3 ease;
+       cursor: pointer;
+       border-radius: 40px;
+       box-shadow: 0 9px #999;
+       margin-left: auto;
+       margin-right: auto;
+     }
+ button btn1:hover,.body1 button b1:focus {
+       background: #e60808;
+     }
+   button btn1:active{
+       background: #e60808;
+       box-shadow: 0 5px #666;
+       transform: translateY(4px);
+     }
+
+
+</style>
+<br>
+<br>
+<br>
+<p id="one">Quote:</p>
+<br>
+<br>
+<br>
 
 
 </body>
