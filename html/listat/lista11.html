@@ -2,11 +2,7 @@
 <html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< HEAD
-  <title>10 Medicines/pharmaceuticals of animal origin </title>
-=======
-  <title> 10 Medicines/pharmaceuticals of animal origin </title>
->>>>>>> fdd096824c23abde6de93d9643768718adf2e18c
+  <title>> 10 Medicines/pharmaceuticals of animal origin </title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="../../css/listaN.css" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -44,6 +40,41 @@
       border-style: dashed;
     }
   </style>
+   <script>
+    $(document).ready(function(){
+      $("#div1").click(function(){
+        $("#div2").slideDown("slow");
+      });
+    });
+    </script>
+        <style>
+        th, td {
+        padding: 10px;
+        }
+        .empty-cell {
+          background: red;
+        }
+        .center-table {
+          margin-left: auto;
+          margin-right: auto;
+          margin-bottom: 10px;
+          border-style: dashed;
+        }
+    
+        #div1 {
+          background-color: #F1F1F1;
+          width: 70%;
+          margin-left: 228px;
+          font-style: normal;
+          text-align: center;
+    }
+    
+    #div2 {
+      text-align: center;
+      display: none;
+    }
+      </style>
+    </head>
   </head>
 <body>
     <header id="header">
@@ -67,7 +98,6 @@
                 <li><a href="../adoption.html">Adoption</a></li>
                 <li><a href="#kontakti">Contact Us</a></li>
                 <li><a href="../aboutus.html">About Us</a></li>
-                <li><a href="../game.html">Game</a></li>
                 
             </ul>
 
@@ -84,8 +114,8 @@
     types of stabilisers added to pharmaceutical products such as vaccines. Heparin, an injectable
     anticoagulant, is prepared from a porcine source. Further examples of pharmaceutical products known to
     be of animal origin are listed.</b></p>
-
-      <table borders="1" cellspacing="0" class="center-table">
+    <div id="div1">Click here to see the list</div>
+    <table id ="div2" width="70%" border="1" cellspacing="0" class="center-table">
         <tr style="background: #F0F0F0; color: #068d18">
             <td><b> Nr.</b> </td>
           <td><b> Product name</b> </td>
@@ -205,13 +235,9 @@
      background-color:#dcf5e4;
      text-align: center;
     color: blue;
-  }
+  
   </style>
-<<<<<<< HEAD
-<p id="demo" align="center" style="color:red;" ></p>
-=======
-<p id="demo"  style="color:red; text-align: center;" ></p>
->>>>>>> fdd096824c23abde6de93d9643768718adf2e18c
+<p id="demo" align="center" style="color:red" ></p>
 <script>
 Number.prototype.myMethod = function() {
   return this.valueOf() / 2;
