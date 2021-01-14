@@ -9,7 +9,7 @@
   <script src="../../js/jquery.goup.min.js"></script>
   <script src="../../js/validator.js"></script>
   <style>
-    .latestb h4{ color:white;
+      .latestb h4{ color:white;
 
    }
 .latestb   h4 a:hover{
@@ -18,12 +18,53 @@
      color:#ffffff;
 
    }
+   button {
+       font-family: "Roboto", sans-serif;
+       text-transform: uppercase;
+       outline: 0;
+       background: #0f9c3e;
+       border: 0;
+       padding: 15px;
+       color: #FFFFFF;
+       font-size: 14px;
+       -webkit-transition: all 0.3 ease;
+       transition: all 0.3 ease;
+       cursor: pointer;
+       border-radius: 40px;
+       box-shadow: 0 9px #999;
+       margin-left: 700px;
+     }
+
+  .outline {
+  margin: 10px;
+  outline: 5px dashed #CFCFCF  ;
+  outline-offset: 10px;
+}
   </style>
   <script>
     jQuery(document).ready(function(){
     jQuery.goup();
     });
   </script>
+        <script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#div1").fadeToggle(1000);
+  });
+});
+</script>
+<script>
+$(document).ready(function(){
+  $("#hide").click(function(){
+    $("iframe").hide("slow", function(){
+    alert("Oopss...You just hid the video.Click the show button to bring it back.");
+  });
+  });
+  $("#show").click(function(){
+    $("iframe").show(1000);
+  });
+});
+</script>
 </head>
 <body>
 <header id="header">
@@ -47,7 +88,6 @@
     <li><a href="../adoption.html">Adoption</a></li>
     <li><a href="#kontakti">Contact Us</a></li>
     <li><a href="../aboutus.html">About Us</a></li>
-    <li><a href="../game.html"target="_blank">Game</a></li>
 </ul>
 </nav>
 </div>
@@ -79,7 +119,12 @@
         
         </p>
         <br />
-        <iframe width="560" height="315" style="margin-left: 350px;" src="https://www.youtube.com/embed/ZllnvHJ4nM8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315"  src="https://www.youtube.com/embed/ZllnvHJ4nM8" 
+        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen style="display: block; margin-left:auto; margin-right:auto; margin-bottom: 20px;">
+        </iframe>
+        <button style="margin-left: 680px;" id="hide">Hide</button>
+        <button id="show">Show</button>
       </section>
   <address style="float: right;">
      Shkruar nga <a href="mailto:rinesekqiku@gmail.com">Rinese Kqiku</a>
@@ -112,70 +157,72 @@
   </article>
 </body>
 <footer>
-<div class="footer-main">
-  <div class="footer-inner">
-  <div class="footer-left">
-  <div class="footer-box">
-  
-  <h6>About Us</h6>
-  <img src="../../images/S.png" width="150px" height="50px"/>
-  <svg height="10" width="500">
-  <line x1="10" y1="0" x2="139" y2="0" style="stroke:#028FEC;stroke-width:6" />
-  </svg>
-  <img style="margin-top:5px;" src="../../images/C.png" width="150px" height="50px"/>
-  <p>
-    This website was created for educational purposes, as a project in the subject INTERNET.</p>
-  <a style="float: right" href="aboutus.html" >More &raquo</a>
-  </div>
-  </div>
-  <div class="footer-left">
-  <div class="footer-box">
-    <h6>Linqe</h6>
-    <ul>
-      <li style="border-bottom: 1px solid #333333"><a href="http://www.all-creatures.org/">&raquo All-Creatures</a></li>
-      <li style="border-bottom: 1px solid #333333"><a href="http://www.animalpeoplenews.org/">&raquo Animal People News</a></li>
-      <li style="border-bottom: 1px solid #333333"><a href="http://www.animalsvoice.com/">&raquo Animal's Voice</a></li>
-      <li style="border-bottom: 1px solid #333333"><a href="https://www.hugssociety.org/directories/animal-shelters.html">&raquo Hugs Society</a></li>
-      <li style="border-bottom: 1px solid #333333"><a href="https://faunalytics.org/">&raquo Fauna Analytics</a></li>
-      <li style="border-bottom: 1px solid #333333"><a href="https://www.thedodo.com/">&raquo The Dodo</a></li>
-      <li style="border-bottom: 1px solid #333333"><a href="http://hsi.org/">&raquo Humane Society International</a></li>
-
-    </ul>
-    </div>
-    </div>
-    <div class="footer-left">
-    <div class="footer-box">
-      <h6>Latest: </h6>
-      <h4 ><a  href="listat/lista12.html" >10 Spectacular Glowing Animals</a></h4>
-  
-      <p>The ability to produce and emit light in the dark biochemically is called bioluminescence, and it is one of the most fascinating phenomena in the nature
-        <a style="float: right" href="listat/lista12.html" >More &raquo</a>
-        <br>
-        <br>
-        <br>
-        <div class="latestb">
-          <h4 ><a  href="news/lajmi13.html" >Prehistoric 'swamp king' crocodile of Australia was over 16 feet long, new study says</a></h4>
-          <p>This ancient creature would have looked a lot like today's Indo-Pacific crocodile "on steroids," a researcher said.
-            <a style="float: right" href="news/lajmi13.html" >More &raquo</a>
-      </div>
-      </div>
+    <div class="footer-main">
+      <div class="footer-inner">
+      <div class="footer-left">
+      <div class="footer-box">
+      
+      <h6>About Us</h6>
+      <img src="../../images/S.png" width="150px" height="50px"/>
+      <svg height="10" width="500">
+      <line x1="10" y1="0" x2="139" y2="0" style="stroke:#028FEC;stroke-width:6" />
+      </svg>
+      <img style="margin-top:5px;" src="../../images/C.png" width="150px" height="50px"/>
+      <p>
+        This website was created for educational purposes, as a project in the subject INTERNET.</p>
+      <a style="float: right" href="aboutus.html" >More &raquo</a>
       </div>
       </div>
       <div class="footer-left">
       <div class="footer-box">
-        <h6 id="kontakti">Contact us</h6>
-        <form id="contact-form" method="post" action="" autocomplete="on">
-          <input type="text" id="emri" name="emri" placeholder="Emri" class="required">
-          <input type="text" id="email" name="email" placeholder="Email" class="required">
-          <input type="text" name="subjekti" placeholder="Subjekti" class="required">
-            <textarea name="komenti" placeholder="Komenti" rows="4" class="required"></textarea><br>
-          <input type="submit" name="SUBMIT" value="SUBMIT">
-        </form>
-      </div>
+        <h6>Linqe</h6>
+        <ul>
+          <li style="border-bottom: 1px solid #333333"><a href="http://www.all-creatures.org/">&raquo All-Creatures</a></li>
+          <li style="border-bottom: 1px solid #333333"><a href="http://www.animalpeoplenews.org/">&raquo Animal People News</a></li>
+          <li style="border-bottom: 1px solid #333333"><a href="http://www.animalsvoice.com/">&raquo Animal's Voice</a></li>
+          <li style="border-bottom: 1px solid #333333"><a href="https://www.hugssociety.org/directories/animal-shelters.html">&raquo Hugs Society</a></li>
+          <li style="border-bottom: 1px solid #333333"><a href="https://faunalytics.org/">&raquo Fauna Analytics</a></li>
+          <li style="border-bottom: 1px solid #333333"><a href="https://www.thedodo.com/">&raquo The Dodo</a></li>
+          <li style="border-bottom: 1px solid #333333"><a href="http://hsi.org/">&raquo Humane Society International</a></li>
+    
+        </ul>
+        </div>
+        </div>
+        <div class="footer-left">
+        <div class="footer-box">
+          <h6>Latest: </h6>
+          <h4 ><a  href="listat/lista12.html" >10 Spectacular Glowing Animals</a></h4>
+      
+          <p>The ability to produce and emit light in the dark biochemically is called bioluminescence, and it is one of the most fascinating phenomena in the nature
+            <a style="float: right" href="listat/lista12.html" >More &raquo</a>
+            <br>
+            <br>
+            <br>
+            <div class="latestb">
+              <h4 ><a  href="news/lajmi13.html" >Prehistoric 'swamp king' crocodile of Australia was over 16 feet long, new study says</a></h4>
+              <p>This ancient creature would have looked a lot like today's Indo-Pacific crocodile "on steroids," a researcher said.
+                <a style="float: right" href="news/lajmi13.html" >More &raquo</a>
           </div>
-  
-  <div class="clr"></div>
-  </div>
-  </div>
-  </footer>
-</html>
+          </div>
+          </div>
+          </div>
+          <div class="footer-left">
+          <div class="footer-box">
+            <h6 id="kontakti">Contact us</h6>
+            <form id="contact-form" method="post" action="" autocomplete="on">
+              <input type="text" id="emri" name="emri" placeholder="Emri" class="required">
+              <input type="text" id="email" name="email" placeholder="Email" class="required">
+              <input type="text" name="subjekti" placeholder="Subjekti" class="required">
+                <textarea name="komenti" placeholder="Komenti" rows="4" class="required"></textarea><br>
+              <input type="submit" name="SUBMIT" value="SUBMIT">
+            </form>
+          </div>
+              </div>
+      
+      <div class="clr"></div>
+      </div>
+      </div>
+      </footer>
+    </html>
+    
+

@@ -28,7 +28,7 @@
     function hello(){
       alert("Grumpy Cat's Worst Christmas Ever");
     }
-  </script>
+</script>
 </head>
 <body>
 <header id="header">
@@ -52,7 +52,7 @@
     <li><a href="../adoption.html">Adoption</a></li>
     <li><a href="#kontakti">Contact Us</a></li>
     <li><a href="../aboutus.html">About Us</a></li>
-    <li><a href="../game.html"target="_blank">Game</a></li>
+    <li><a href="../game.html">Game</a></li>
 </ul>
 </nav>
 </div>
@@ -73,7 +73,32 @@
         <img src="../../images/BossCat2.jpg" width="780" height="439" alt="Cat2" class="center-image" />
       </div>
       <div class="movie">
-         <p class="left-text">Grumpy Cat might be gone from our lives, but her displeased expression will live on forever in our memes … and her merchandise (and a Christmas movie made about her). <button onclick="hello()" class="b3">See the name of the movie.</button></p>
+         <p class="left-text">Grumpy Cat might be gone from our lives, but her displeased expression will live on forever in our memes … and her merchandise (and a Christmas movie made about her). <button onclick="hello()" class="b3">See the name of the movie.</button>
+          <button onclick="Cat.introduce()"> See the most famous cat's information </button>
+          <p id="demo"></p>
+
+          <script>
+            class Animal {
+            
+            constructor(firstName,lastName,age,eyeColor) {
+              this.firstName = firstName;
+              this.lastName = lastName;
+              this.age= age;
+              this.eyeColor = eyeColor;
+            
+            }
+            
+            introduce() {
+              alert(`Emri i maces: ${this.firstName} , Mbiemri: ${this.lastName}, ${this.age} vjet ,Ngjyra e syve: ${this.eyeColor}`);
+            }
+            
+            }
+            
+            const Cat = new Animal('Tardar','Sauce','7','Black');
+            
+             
+             </script>
+
       </div>
       <br />
       <iframe width="560" height="315" src="https://www.youtube.com/embed/OVUe1QfTlJc" style="margin-left: 350px;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -174,6 +199,6 @@
   
   <div class="clr"></div>
   </div>
-  </div>
+</div>
   </footer>
 </html>
