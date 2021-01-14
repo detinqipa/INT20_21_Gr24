@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>SignUp</title>
+    <link rel="stylesheet" href="../css/signup1.css">
+
+    
+</head>
+<body>
+        <div class="container">
+        <div class="text">
+            <h2>Create account</h2> 
+        </div> 
+
+    <form class="form " id="form" action="/action_page.php">
+      <div class="form-control">
+          <label>Username</label>
+          <input type="text" id="username" placeholder="Username">
+          <i class="fa fa-check-circle" aria-hidden="true"></i>
+          <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+       <small>Error message</small>
+        
+       </div>
+
+     <div class="form-control">
+        <label>Email</label>
+        <input type="email" id="email" placeholder="name@domain.com">
+        <i class="fa fa-check-circle" aria-hidden="true"></i>
+        <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+       <small>Error message</small>
+      
+      </div>
+
+     <div class="form-control" >
+       <label>Password</label>
+       <input type="password" id="password" placeholder="Password">
+    <i class="fa fa-check-circle" aria-hidden="true"></i>
+    <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+<small>Error message</small>
+  
+</div>
+
+<div class="form-control">
+    <label>Confirm Password</label>
+    <input type="password" id="password2" placeholder="Password">
+    <i class="fa fa-check-circle" aria-hidden="true"></i>
+    <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+<small>Error message</small>
+  
+</div><label><b>Personal Information: </b></label><br />
+<div class="form-control" >
+    
+                
+    <label for="Birth" style="padding-left: 170px;color: rgb(5, 113, 214);">Birth:</label>
+    <input type="date"  name="Birth" style="width: 100%; text-align: center; " > 
+</div>
+     <label for="Gender" style="padding-left: 165px; color: rgb(5, 113, 214);">Gender:</label> <br>
+   
+     <input type="radio" name="Gender" value="1" required; style="margin-left: 140px;">Female</input>
+     <input type="radio" name="Gender" value="2" required;>Male</input>
+     <br><br>
+     <div class="form-control" >
+    <label style="margin-left: 50px;">Shteti</label>
+
+    <select name="Country" required; style="margin-left: 5px;">
+     <option>Chose</option>
+        <option>Kosovo</option>
+        <option>Albania</option>
+        <option>Italy</option>
+        <option>Germany</option>
+        <option>England</option>
+    </select>
+
+     <label style="margin-left: 30px;">City</label>
+    
+     <select name="City" required="" style="margin-left: 5px;">
+       <option>Chose</option>
+       <option>Prishtina</option>
+       <option>London</option>
+       <option>Paris</option>
+       <option>Tokyo</option>
+   </select>
+</div>
+   <label for="Animals">The love for animals: </label>
+                <input type="range" name="animals" >
+
+
+            
+               <div class="t1" style="margin-left: 20px;">
+
+                    <label for="rules"><b>I accept the rules</b></label> <input type="checkbox"><label for="acception" required=""><i><a href="rules.html"target="_blank">see the rules</a> </i></label>
+            
+               </div>
+
+<button type="submit">Submit</button>
+
+</div>
+</form>
+
+
+</body>
+
+<script src="../js/signup.js"></script>
+</html>
