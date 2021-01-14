@@ -65,7 +65,32 @@
           <div class="folder-lista-background"><img src="../../images/marchofthepenguins.jpg" width="600" height="396" class="folder-lista-photo" /></div>
           <p>Sometimes the best story is the real one. It was the case with March of the Penguins, the 2005 documentary narrated by Morgan Freeman. The film follows the life of a group of emperor penguins beginning at the end of summer in Antarctica.
 
-            The penguins travel to their breeding grounds and viewers are treated to scenes of their natural mating ritual and the journey that follows, from egg to hatchling. The father penguins are left to look after the eggs as the mothers make their way to the sea to get food and bring it back to their babies.</p>
+            The penguins travel to their breeding grounds and viewers are treated to scenes of their natural mating ritual and the journey that follows, from egg to hatchling. The father penguins are left to look after the eggs as the mothers make their way to the sea to get food and bring it back to their babies.
+          </p>
+          <p style="color: red; text-align: center;">Click the button to do a global search for "grounds" in a string.</p>
+
+<button onclick="myFunction()" class="pozita">Try it</button>
+<style>
+	.pozita
+  {
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+</style>
+
+<p id="demo"; style="text-align: center; color: red; "></p>
+
+<script>
+function myFunction() {
+  var str = "Sometimes the best story is the real one. It was the case with March of the Penguins, the 2005 documentary narrated by Morgan Freeman. The film follows the life of a group of emperor penguins beginning at the end of summer in Antarctica.The penguins travel to their breeding grounds and viewers are treated to scenes of their natural mating ritual and the journey that follows, from egg to hatchling. The father penguins are left to look after the eggs as the mothers make their way to the sea to get food and bring it back to their babies.";
+  var patt1 = /grounds/g;
+  var result = str.match(patt1);
+  document.getElementById("demo").innerHTML = result;
+}
+</script>
         </div>
         <div>
           <h2><li class="folder-lista-background">Rise of the planet of the apes</li></h2><br />

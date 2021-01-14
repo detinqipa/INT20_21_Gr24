@@ -94,9 +94,14 @@
         <div>
           <h2><li class="folder-lista-background">Elephant</li></h2><br />
           <div class="folder-lista-background"><img src="https://www.treehugger.com/thmb/AJXaejsT6NCy-Ag1yZc7aQCWgw8=/1000x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/__opt__aboutcom__coeus__resources__content_migration__mnn__images__2015__07__ElephantFamily-ca744bf2c77741f3aae1fdad9e55c4c4.jpg" width="660" height="396" class="folder-lista-photo" /></div>
-          <p>Contrary to popular perception, elephants are more than just lumbering giants with big ears and a good memory. In fact, elephants are quite elegant, cultured and curious. They have been known to clean their food and use tools in various ways in the wild, and they can also follow human commands in captivity. Elephants are also extremely caring and empathetic to other members of their group and to other species, which is considered a highly advanced form of intelligence.
-
+          <p id="p01">Contrary to popular perception, elephants are more than just lumbering giants with big ears and a good memory. In fact, elephants are quite elegant, cultured and curious. They have been known to clean their food and use tools in various ways in the wild, and they can also follow human commands in captivity. Elephants are also extremely caring and empathetic to other members of their group and to other species, which is considered a highly advanced form of intelligence.
           </p>
+          <p style="text-align: center;font-size: small; color: red; "> If this paragraph contains the word "memory", will appear the word "true"!</p>
+          <p id="demo"></p>
+          <script>
+            text = document.getElementById("p01").innerHTML; 
+            document.getElementById("demo").innerHTML = /memory/.test(text);
+            </script>
         </div>
         <div>
           <h2><li class="folder-lista-background">Bees</li></h2><br />

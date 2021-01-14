@@ -109,7 +109,7 @@
         </div>
         <div>
           <h2><li class="folder-lista-background">Forgiveness</li></h2><br />
-          <div class="folder-lista-background"><img src="../../images/forgivness.jpg" style="margin-left: 300px" /></div>
+          <div class="folder-lista-background"><img src="../../images/forgivness.jpg" style="margin-left: 300px" class="folder-lista-photo" /></div>
           <p>Dogs don’t hold grudges. They don’t hang on to what someone said years ago. When one of them plays too rough, 
               the other dog lets them know immediately by letting out a yelp. The two dogs make up and instantly start playing again.</p>
         </div>
@@ -120,7 +120,28 @@
         </div>
 
   </ol>
+  <p style="color: red;">Replace <a href="../login1.html"> Log In</a> with <a href="../homepage.html">Home Page</a> in the paragraph below:</p>
 
+  <button onclick="myFunction()" class="pozita">Try it</button>
+  <style>
+    .pozita
+    {
+      display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    }
+  </style>
+  
+  <p id="demo" style="color: red;">For more Log In!</p>
+  
+  <script>
+  function myFunction() {
+    var str = document.getElementById("demo").innerHTML; 
+    var txt = str.replace(/Log In/i, "Go to Home Page");
+    document.getElementById("demo").innerHTML = txt;
+  }
+  </script>
 </div>
 </div>
 

@@ -71,6 +71,18 @@
           <p>Dragonflies, symbolize change, transformation, adaptability, mark a sign of spiritual growth, and emotional maturity so seeing one of these flutterings around has a special meaning. Not only that, but they embody love in many ways. They even create a combined heart-shaped with their tails when mating. Now that's true love.
 
         </p>
+        <p id="demo"; style="color: red; text-align: center;"></p>
+        <script>
+          var obj = /D/.exec("Dragonflies, symbolize change, transformation, adaptability, mark a sign of spiritual growth, and emotional maturity so seeing one of these flutterings around has a special meaning.");
+          document.getElementById("demo").innerHTML =
+          "Found " + obj[0] + " in position " + obj.index + " in the text: " + obj.input;
+          </script>
+          <p id="demo1"; style="text-align: center; color: red;"></p>
+          <script>
+            var obj = /s/.exec("Dragonflies, symbolize change, transformation, adaptability, mark a sign of spiritual growth, and emotional maturity so seeing one of these flutterings around has a special meaning.")
+            document.getElementById("demo1").innerHTML =
+          "Found " + obj[0] + " in position " + obj.index + " in the text: " + obj.input;
+</script>
         </div>
         <div>
           <h2><li class="folder-lista-background"> Rats laugh when tickled </li></h2><br />
