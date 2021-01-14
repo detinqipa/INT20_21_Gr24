@@ -58,7 +58,7 @@
   <div class="listat-page-outline">
     <h1 class="folder-lista">Top 10 movies about animals</h1>
 </div>
-<p><b>As with anything in life, animal movies are not all created equal. Some are much more beloved than others. Here are the 10 best of all time. </b></p>
+<p><b>As with anything in life, animal movies are not all created equal. Some are much more beloved than others. Here are the 10 best animal movies of all time. </b></p>
   <ol reversed>
         <div>
     <h2><li class="folder-lista-background">March of the penguins</li></h2><br />
@@ -131,6 +131,39 @@
 
 </div>
 </div>
+<div>
+  <button onclick="myFunction()" class="pozita1">Click the button to do  a global search for "movies" in the first line.</button>
+  <style>
+    .pozita1 {
+         font-family: "Roboto", sans-serif;
+         text-transform: lowercase;
+         outline: 0;
+         background: #00d9ff;
+         border: 0;
+         padding: 15px;
+         color: #FFFFFF;
+         font-size: 14px;
+         -webkit-transition: all 0.3 ease;
+         transition: all 0.3 ease;
+         cursor: pointer;
+         border-radius: 40px;
+         
+         margin-left: 430px;
+       }
+    </style>
+  <br>
+  <p id="demo" align="center" ></p>
+  </div>
+  <script>
+    function myFunction() {
+      var str = "As with anything in life, animal movies are not all created equal. Some are much more beloved than others. Here are the 10 best animal movies of all time.";
+      var patt2 = /movies/g;
+      var result = str.match(patt2);
+      document.getElementById("demo").innerHTML = result;
+    }
+    </script>
+    </br>
+  </div>
 
 
 </body>
