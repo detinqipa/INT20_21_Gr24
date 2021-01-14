@@ -4,7 +4,9 @@
     box-shadow: border-box;
 }
 body{
-    background-image: url('background2.jpg');
+    background-image: url('https://www.pngitem.com/pimgs/m/14-145826_mountain-chinese-wash-forest-ink-painting-fengshui-don.png');
+    background-position: left;
+  
  
     
     display: flex;
