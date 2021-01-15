@@ -136,6 +136,38 @@ The iridescence of the sunset moth's wings is what causes it to look so vibrant.
 
 </div>
 </div>
+<button onclick="myFunction()" class="pozita">Click the button to do a case-insensitive search for "Animals" in this list's name.</button>
+<style>
+  .pozita {
+       font-family: "Roboto", sans-serif;
+       text-transform: lowercase;
+       outline: 0;
+       background: #00d9ff;
+       border: 0;
+       padding: 15px;
+       color: #FFFFFF;
+       font-size: 14px;
+       -webkit-transition: all 0.3 ease;
+       transition: all 0.3 ease;
+       cursor: pointer;
+       border-radius: 40px;
+       
+       margin-left: 480px;
+     }
+  </style>
+<br>
+<p id="demo" align="center"; ></p>
+</div>
+
+<script>
+function myFunction() {
+  var str = "10 Fun Facts About Animals";
+  var patt1 = /Animals/i;
+  var result = str.match(patt1);
+  document.getElementById("demo").innerHTML = result;
+}
+</script>
+</br>
 
 
 </body>
