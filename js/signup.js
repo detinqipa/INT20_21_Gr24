@@ -52,7 +52,7 @@ function checkInputs(){
         setSuccessFor(password2);
     }
     if (usernameValue!==''&& emailValue!==''&&passwordValue!==''&&password2Value!==''&&(passwordValue == password2Value)){
-        open('done.html');
+        open('../html/done.html');
     }
 
 
