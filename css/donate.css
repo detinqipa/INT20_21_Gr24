@@ -8,7 +8,7 @@
 }
 .donation-box {
 	width: 500px;
-	height: 400px;
+	height: 450px;
 	background-color: #dce0d3;
 	
 	position: relative;
@@ -52,6 +52,7 @@
 	position: absolute;
 	top: 60px;
 	left: 15px;
+	height: 400px;
 	
 }
 
@@ -72,7 +73,7 @@
 	width: 30%;
 	display: block;
 	position: absolute;
-	top: 60px;
+	top: 80px;
 	right: 15px;
 }
 
@@ -130,7 +131,7 @@
 
 .switch {
   position: absolute;
-  top: 190px;
+  top: 250px;
   left: 15px;
   margin: 20px auto;
   height: 26px;
@@ -199,7 +200,7 @@
 
 .checkboxes {
 	position: absolute;
-	top: 242px;
+	top: 302px;
 	left: 13px;
 }
 
