@@ -281,6 +281,20 @@ background-size: cover;">
 <h1 style="margin-left: 640px;">Are you here te ADOPT?</h1>
 <h2 style="margin-left: 530px;">Hover close to the animal's face and Look for Options!</h1>
 </div>
+<label style="margin-left:35%;">Your favorite Animal:
+  <datalist id="animals">
+    <option value="Dog">DOG</option>
+    <option value="Cat">CAT</option>
+    <option value="Rabbit">RABBIT</option>
+    <option value="Monkey">MONKEY</option>
+    <option value="Horse">HORSE</option>
+    <option value="Cow">COW</option>
+    <option value="Fox">FOX</option>
+    <!-- … -->
+  </datalist>
+  If other, please specify:
+    <input type="text" name="animals" list="animals" multiple >
+  </label>
 
 <script>
   var x = document.getElementById("demo");
@@ -683,6 +697,8 @@ clickButton.addEventListener("click", function weekDay() {
             line-height: 40px;
             color: white;
             background-color: #012506;
-        }
+        } 
+        </style>
         </footer>
+       
 </html>
