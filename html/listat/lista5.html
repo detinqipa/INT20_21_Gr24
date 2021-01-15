@@ -27,7 +27,7 @@
 <body>
     <header id="header">
         <div class="header">
-            <p style="margin-top: 15px; float: left"><a href="signup1.html" style="text-decoration: none; color: #8c8c8c;">Sign Up</a> | <a href="login1.html"style="text-decoration: none; color: #8c8c8c;"> Login</a>
+            <p style="margin-top: 15px; float: left"><a href="../signup1.html" style="text-decoration: none; color: #8c8c8c;">Sign Up</a> | <a href="../login1.html"style="text-decoration: none; color: #8c8c8c;"> Login</a>
             <div class="icons">
               <a href="https://www.linkedin.com/" target="_blank" class="fa fa-linkedin"></a>
               <a href="https://twitter.com/" target="_blank" class="fa fa-twitter"></a>
@@ -67,30 +67,7 @@
 
             The penguins travel to their breeding grounds and viewers are treated to scenes of their natural mating ritual and the journey that follows, from egg to hatchling. The father penguins are left to look after the eggs as the mothers make their way to the sea to get food and bring it back to their babies.
           </p>
-          <p style="color: red; text-align: center;">Click the button to do a global search for "grounds" in a string.</p>
 
-<button onclick="myFunction()" class="pozita">Try it</button>
-<style>
-	.pozita
-  {
-
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-  }
-</style>
-
-<p id="demo"; style="text-align: center; color: red; "></p>
-
-<script>
-function myFunction() {
-  var str = "Sometimes the best story is the real one. It was the case with March of the Penguins, the 2005 documentary narrated by Morgan Freeman. The film follows the life of a group of emperor penguins beginning at the end of summer in Antarctica.The penguins travel to their breeding grounds and viewers are treated to scenes of their natural mating ritual and the journey that follows, from egg to hatchling. The father penguins are left to look after the eggs as the mothers make their way to the sea to get food and bring it back to their babies.";
-  var patt1 = /grounds/g;
-  var result = str.match(patt1);
-  document.getElementById("demo").innerHTML = result;
-}
-</script>
         </div>
         <div>
           <h2><li class="folder-lista-background">Rise of the planet of the apes</li></h2><br />
@@ -211,7 +188,7 @@ function myFunction() {
         </div>
         <div class="footer-left">
         <div class="footer-box">
-          <h6>Linqe</h6>
+          <h6>Links</h6>
           <ul>
             <li style="border-bottom: 1px solid #333333"><a href="http://www.all-creatures.org/">&raquo All-Creatures</a></li>
             <li style="border-bottom: 1px solid #333333"><a href="http://www.animalpeoplenews.org/">&raquo Animal People News</a></li>
@@ -246,10 +223,10 @@ function myFunction() {
             <div class="footer-box">
               <h6 id="kontakti">Contact us</h6>
               <form id="contact-form" method="post" action="" autocomplete="on">
-                <input type="text" id="emri" name="emri" placeholder="Emri" class="required">
+                <input type="text" id="emri" name="emri" placeholder="Name" class="required">
                 <input type="text" id="email" name="email" placeholder="Email" class="required">
-                <input type="text" name="subjekti" placeholder="Subjekti" class="required">
-                  <textarea name="komenti" placeholder="Komenti" rows="4" class="required"></textarea><br>
+                <input type="text" name="subjekti" placeholder="Subject" class="required">
+                  <textarea name="komenti" placeholder="Comment" rows="4" class="required"></textarea><br>
                 <input type="submit" name="SUBMIT" value="SUBMIT">
               </form>
             </div>
@@ -258,5 +235,20 @@ function myFunction() {
         <div class="clr"></div>
         </div>
         </div>
+        <div class="footer-bottom">
+          &copy;Copyright Reserved 2020 Univerity of Pristina-Educational Project
+        </div>
+        <style>
+           .footer-bottom{
+            text-align: center;
+            border-top: 1px solid #9c8c8c;
+            padding: 0 10%;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 15px;
+            line-height: 40px;
+            color: white;
+            background-color: #012506;
+        }
+      </style>
         </footer>
 </html>

@@ -27,7 +27,7 @@
 <body>
     <header id="header">
         <div class="header">
-            <p style="margin-top: 15px; float: left"><a href="signup1.html" style="text-decoration: none; color: #8c8c8c;">Sign Up</a> | <a href="login1.html"style="text-decoration: none; color: #8c8c8c;"> Login</a>
+            <p style="margin-top: 15px; float: left"><a href="../signup1.html" style="text-decoration: none; color: #8c8c8c;">Sign Up</a> | <a href="../login1.html"style="text-decoration: none; color: #8c8c8c;"> Login</a>
             <div class="icons">
               <a href="https://www.linkedin.com/" target="_blank" class="fa fa-linkedin"></a>
               <a href="https://twitter.com/" target="_blank" class="fa fa-twitter"></a>
@@ -74,6 +74,30 @@
           <h2><li class="folder-lista-background">Golden poison dart frog</li></h2><br />
           <div class="folder-lista-background"><img src="https://tr-images.condecdn.net/image/aembLVe28xb/crop/1020/f/golden-poison-dart-frog-10-dangerous-animals-conde-nast-traveller-30april19-getty-images.jpg" width="640" height="388" class="folder-lista-photo" /></div>
           <p>The poison dart is the name of a large, diverse group of brightly coloured frogs that live mostly in northern South America, of which only a handful of species are particularly dangerous to humans. The most deadly, the golden poison dart, inhabits the small range of rainforests along Colombia’s Pacific coast, and grows to around two-inches long (roughly the size of a paper clip). Its poison, called batrachotoxin, is so potent that there’s enough in one frog to kill 10 grown men, and just two micrograms is enough to kill a single individual. But what makes the amphibian especially dangerous is that its poison glands are located beneath its skin, meaning a mere touch will cause trouble. </p>
+          <p style="color: red; text-align: center;">Click the button to do a global search for "large" in a string.</p>
+
+          <button onclick="myFunction()" class="pozita3">Try it</button>
+          <style>
+            .pozita3
+            {
+          
+              display: block;
+              margin-left: auto;
+              margin-right: auto;
+              text-align: center;
+            }
+          </style>
+          
+          <p id="demo"; style="text-align: center; color: red; "></p>
+          
+          <script>
+          function myFunction() {
+            var str = "The poison dart is the name of a large, diverse group of brightly coloured frogs that live mostly in northern South America, of which only a handful of species are particularly dangerous to humans.";
+            var patt1 = /large/g;
+            var result = str.match(patt1);
+            document.getElementById("demo").innerHTML = result;
+          }
+          </script>
         </div>
         <div>
           <h2><li class="folder-lista-background">Box Jellyfish</li></h2><br />
@@ -139,7 +163,7 @@
         </div>
         <div class="footer-left">
         <div class="footer-box">
-          <h6>Linqe</h6>
+          <h6>Links</h6>
           <ul>
             <li style="border-bottom: 1px solid #333333"><a href="http://www.all-creatures.org/">&raquo All-Creatures</a></li>
             <li style="border-bottom: 1px solid #333333"><a href="http://www.animalpeoplenews.org/">&raquo Animal People News</a></li>
@@ -174,10 +198,10 @@
             <div class="footer-box">
               <h6 id="kontakti">Contact us</h6>
               <form id="contact-form" method="post" action="" autocomplete="on">
-                <input type="text" id="emri" name="emri" placeholder="Emri" class="required">
+                <input type="text" id="emri" name="emri" placeholder="Name" class="required">
                 <input type="text" id="email" name="email" placeholder="Email" class="required">
-                <input type="text" name="subjekti" placeholder="Subjekti" class="required">
-                  <textarea name="komenti" placeholder="Komenti" rows="4" class="required"></textarea><br>
+                <input type="text" name="subjekti" placeholder="Subject" class="required">
+                  <textarea name="komenti" placeholder="Comment" rows="4" class="required"></textarea><br>
                 <input type="submit" name="SUBMIT" value="SUBMIT">
               </form>
             </div>
@@ -186,5 +210,20 @@
         <div class="clr"></div>
         </div>
         </div>
+        <div class="footer-bottom">
+          &copy;Copyright Reserved 2020 Univerity of Pristina-Educational Project
+        </div>
+        <style>
+           .footer-bottom{
+            text-align: center;
+            border-top: 1px solid #9c8c8c;
+            padding: 0 10%;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 15px;
+            line-height: 40px;
+            color: white;
+            background-color: #012506;
+        }
+        </style>
         </footer>
 </html>

@@ -18,29 +18,7 @@
      color:#ffffff;
 
    }
-   .button1 #b4 {
-       font-family: "Roboto", sans-serif;
-       text-transform: uppercase;
-       outline: 0;
-       background: #f700ff;
-       border: 0;
-       padding: 15px;
-       color: #FFFFFF;
-       font-size: 14px;
-       -webkit-transition: all 0.3 ease;
-       transition: all 0.3 ease;
-       cursor: pointer;
-       border-radius: 40px;
-       box-shadow: 0 2px #999;
-     }
-   .button1 #b4:hover,.button1 #b4:focus {
-       background: #e608db;
-     }
-   .button1 #b4:active{
-       background: #e608c8;
-       box-shadow: 0 5px #666;
-       transform: translateY(4px);
-     }
+   
    </style>
   <script>
     jQuery(document).ready(function(){
@@ -259,34 +237,7 @@ With small and safe steps, we will work until we see no stray animals in the str
 <iframe class="Googlemap" style="width: 100%;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1783626.979221921!2d21.002325002622882!3d42.75904528638854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13537af354bf7df1%3A0xbfffeedfabc31791!2sKosovo!5e0!3m2!1sen!2s!4v1610302235880!5m2!1sen!2s" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 
 </br></br></br>
-<h1 class="rate" style="text-align: center;margin-top:20px; text-shadow: 2px 2px 5px rgb(0, 0, 189);"> Please rate this website from 1-10!</h1>
-<br>
 
-<div class="button1" style="align-items: center;margin-left: 700px;" >
-<input id="demo" type="text" style="border-radius: 30px;"><br><br>
-<button type="submit" id="b4" onclick="myFunction()" style="margin-left: 45px;"><a href="aboutus.html" style="text-decoration: none;color: #FFFFFF;" >Submit</a></button>
-<br>
-<p id="p01"></p>
-</div>
-<script>
-function myFunction() {
-  var message, x;
-  message = document.getElementById("p01");
-  message.innerHTML = "";
-  x = document.getElementById("demo").value;
-  try { 
-    if(x == "")  throw "empty";
-    if(isNaN(x)) throw "not a number";
-    x = Number(x);
-    if(x < 1)  throw "too low";
-    if(x > 10)   throw "too high";
-  }
-  catch(err) {
-    message.innerHTML = "Input is " + err;
-  }
-}
-</script>
-<br>
 </body>
 <footer>
    <div class="footer-main">
@@ -307,7 +258,7 @@ function myFunction() {
       </div>
       <div class="footer-left">
       <div class="footer-box">
-        <h6>Linqe</h6>
+        <h6>Links</h6>
         <ul>
           <li style="border-bottom: 1px solid #333333"><a href="http://www.all-creatures.org/">&raquo All-Creatures</a></li>
           <li style="border-bottom: 1px solid #333333"><a href="http://www.animalpeoplenews.org/">&raquo Animal People News</a></li>
@@ -342,10 +293,10 @@ function myFunction() {
            <div class="footer-box">
              <h6 id="kontakti">Contact us</h6>
              <form id="contact-form" method="post" action="" autocomplete="on">
-               <input type="text" id="emri" name="emri" placeholder="Emri" class="required">
+               <input type="text" id="name" name="name" placeholder="Name" class="required">
                <input type="text" id="email" name="email" placeholder="Email" class="required">
-               <input type="text" name="subjekti" placeholder="Subjekti" class="required">
-                 <textarea name="komenti" placeholder="Komenti" rows="4" class="required"></textarea><br>
+               <input type="text" name="subject" placeholder="Subject" class="required">
+                 <textarea name="comment" placeholder="Comment" rows="4" class="required"></textarea><br>
                <input type="submit" name="SUBMIT" value="SUBMIT">
              </form>
            </div>
@@ -354,5 +305,19 @@ function myFunction() {
        <div class="clr"></div>
        </div>
        </div>
+       <div class="footer-bottom">
+          &copy;Copyright Reserved 2020 Univerity of Pristina-Educational Project
+        </div>
+        <style>
+           .footer-bottom{
+            text-align: center;
+            border-top: 1px solid #9c8c8c;
+            padding: 0 10%;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 15px;
+            line-height: 40px;
+            color: white;
+            background-color: #012506;
+        }</style>
        </footer>
 </html>
