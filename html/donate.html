@@ -7,7 +7,7 @@
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,700italic,400italic' rel='stylesheet' type='text/css'>
 </head>
 <body>
-
+<form action="">   
      <div class="donation-container">
             
             <div class="donation-box">
@@ -16,7 +16,8 @@
 	            <div class="fields">
 		            <input type="text" id="firstName" placeholder="First Name"> </input>
 		            <input type="text" id="lastName" placeholder="Last Name"> </input>
-		            <input type="text" id="email" placeholder="Email"> </input>
+					<input type="text" id="email" placeholder="Email"> </input>
+					<input pattern="[0-9][A-Z]{3}" name="product" type="text" placeholder="Number" title="Single digit followed by three uppercase letters."/>
 	            </div>
 	            
 	             <div class="amount">
@@ -50,7 +51,8 @@
 			   
 	            
 	            <div class="donate-button"><i class="fa fa-credit-card"></i><a href="../html/done.html"> Donate Now</a></div>
-            </div>  
+			</div> 
+		 </form>
 	</div> <script src="../js/donate.js"></script>
   </body>
  
