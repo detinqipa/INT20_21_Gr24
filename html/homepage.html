@@ -53,6 +53,29 @@
         box-shadow: 0 5px #666;
         transform: translateY(4px);
       }
+      .button1 #b4 {
+       font-family: "Roboto", sans-serif;
+       text-transform: uppercase;
+       outline: 0;
+       background: hsl(69, 100%, 50%);
+       border: 0;
+       padding: 15px;
+       color: #FFFFFF;
+       font-size: 14px;
+       -webkit-transition: all 0.3 ease;
+       transition: all 0.3 ease;
+       cursor: pointer;
+       border-radius: 40px;
+       box-shadow: 0 2px #999;
+     }
+   .button1 #b4:hover,.button1 #b4:focus {
+       background: hsl(69, 100%, 50%);
+     }
+   .button1 #b4:active{
+       background: hsl(69, 100%, 50%);
+       box-shadow: 0 5px #666;
+       transform: translateY(4px);
+     }
     </style>
     <script>
       jQuery(document).ready(function(){
@@ -302,6 +325,38 @@ Time, Date and Year:</p>
    document.getElementById("demo").innerHTML = d;
    </script>
   -->
+  <h1 class="rate" style="text-align: center;margin-top:20px; text-shadow: 2px 2px 5px rgb(6, 87, 29);"> Please rate this website from 1-10!</h1>
+<br>
+
+<div class="button1" style="align-items: center;margin-left: 700px;" >
+<input id="demo" type="text" style="border-radius: 30px;"><br><br>
+<button type="submit" id="b4" onclick="myFunction()" style="margin-left: 45px;">Submit</button>
+<br>
+<p id="p01"></p>
+</div>
+<script>
+function myFunction() {
+  var message, x;
+  message = document.getElementById("p01");
+  message.innerHTML = "";
+  x = document.getElementById("demo").value;
+  try { 
+    if(x == "")  throw "Input is empty";
+    if(isNaN(x)) throw " Input is not a number";
+    x = Number(x);
+    if(x < 1)  throw "Input is too low";
+    if(x > 10)   throw "Input is too high";
+    var i;
+    for(i=1;i<11;i++)
+    {throw "Thank you !";
+    i++;} 
+  }
+  catch(err) {
+    message.innerHTML =  err;
+  }
+}
+</script>
+<br>
 </body>
   <footer>
     <div class="footer-main">
